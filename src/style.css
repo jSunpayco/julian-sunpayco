@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .naviLink {
+    @apply text-sm hover:text-[#395144] font-semibold;
+  }
+}
