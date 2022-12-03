@@ -1,11 +1,12 @@
 <script>
 import Landing from '@/components/Landing.vue';
 import About from '@/components/About.vue';
+import Works from '@/components/Works.vue';
 import Contact from '@/components/Contact.vue';
 
 export default {
   name: "App",
-  components: { Landing, About, Contact }
+  components: { Landing, About, Works, Contact }
 };
 </script>
 
@@ -15,28 +16,29 @@ export default {
         <Landing />
       </section>
 
+      <!-- <div class="one"></div>
+      <div class="two"></div>
+      <div class="thr"></div>
+      <div class="fou"></div> -->
+
       <section id="about">
           <About/>
       </section>
 
       <section id="works">
-          <Landing msg="Vite + Vue" />
+          <Works/>
       </section>
 
       <section id="contact">
           <Contact/>
       </section>
     </div>
-
-    <!-- <div class="one"></div>
-    <div class="two"></div>
-    <div class="thr"></div>
-    <div class="fou"></div> -->
 </template>
 
 <style>
 .one{
   background-color: #395144;
+  margin-top: 1;
   height: 20px;
   width: 100%;
 }

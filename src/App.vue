@@ -17,7 +17,7 @@ export default {
 
 <template>
   
-  <div class="w-screen fixed z-10">
+  <div class="w-screen fixed z-10 bg-customBeigeDark sm:bg-transparent">
     <div id="naviBar" class="container px-4 mx-auto max-w-7xl">
         <nav class="flex justify-between items-center py-8">
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">

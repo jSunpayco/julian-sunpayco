@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="sectionContainer bg-pink-600">
+  <div class="sectionContainer bg-customGreenDarker">
     <p class="font-bold text-center mt-10">Contact Me</p>
   </div>
 </template>
