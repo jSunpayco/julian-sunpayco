@@ -38,5 +38,6 @@
 <style scoped>
 #titleName{
   font-size: 15vh;
+  font-family: "Butler";
 }
 </style>

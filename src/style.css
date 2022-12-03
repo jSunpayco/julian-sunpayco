@@ -14,3 +14,10 @@
       hover:border-2 hover:border-customGreenDarker hover:shadow-none;
   }
 }
+
+@font-face {
+  font-family: "Butler", serif;
+  font-style: bold;
+  font-weight: 900;
+  src: url("@/assets/fonts/Butler_Black.otf");
+}
