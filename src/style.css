@@ -6,4 +6,10 @@
   .naviLink {
     @apply text-sm hover:text-[#395144] font-semibold;
   }
+  .sectionContainer {
+    @apply w-full h-screen flex flex-col scroll-smooth;
+  }
+  .iconAnchor {
+    @apply shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full;
+  }
 }

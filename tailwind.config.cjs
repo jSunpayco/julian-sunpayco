@@ -2,9 +2,12 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,vue}"],
   theme: {
+    container:{
+      center: true
+    },
     extend: {
       colors: {
-      },
+      }
     },
   },
   plugins: [],
