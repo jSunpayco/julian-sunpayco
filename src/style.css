@@ -4,15 +4,18 @@
 
 @layer components {
   .naviLink {
-    @apply text-sm hover:text-customGreenDarker font-semibold transition-all p-2
-    hover:border-2 hover:border-customGreenDarker hover:rounded-xl;
+    @apply text-sm font-semibold transition-all p-2
+    hover:text-customGreenDarker;
   }
   .sectionContainer {
     @apply w-full h-screen flex flex-col scroll-smooth;
   }
   .iconAnchor {
-    @apply shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mx-5
-      hover:border-2 hover:border-customGreenDarker hover:shadow-none;
+    @apply border-2 shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mx-5 
+    border-transparent hover:border-customGreenDarker hover:shadow-none;
+  }
+  .naviLinkActive {
+    @apply border-customGreenDarker border-b-2 transition-all;
   }
 }
 

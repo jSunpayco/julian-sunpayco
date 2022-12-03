@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gsap": "^3.11.3",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue3-scroll-spy": "^1.0.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",

@@ -10,28 +10,28 @@ export default {
 </script>
 
 <template>
-
-    <section id="landing">
+    <div v-scroll-spy>
+      <section id="landing">
         <Landing />
-        <!-- <button @click="count++">Add</button> -->
-    </section>
+      </section>
 
-    <section id="about">
-        <About/>
-    </section>
+      <section id="about">
+          <About/>
+      </section>
 
-    <section id="works">
-        <Landing msg="Vite + Vue" />
-    </section>
+      <section id="works">
+          <Landing msg="Vite + Vue" />
+      </section>
 
-    <section id="contact">
-        <Contact/>
-    </section>
+      <section id="contact">
+          <Contact/>
+      </section>
+    </div>
 
-    <div class="one"></div>
+    <!-- <div class="one"></div>
     <div class="two"></div>
     <div class="thr"></div>
-    <div class="fou"></div>
+    <div class="fou"></div> -->
 </template>
 
 <style>
@@ -39,7 +39,6 @@ export default {
   background-color: #395144;
   height: 20px;
   width: 100%;
-  /* margin-bottom: 10px; */
 }
 
 .two{

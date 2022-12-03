@@ -16,14 +16,15 @@ import {RouterView} from 'vue-router'
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">
                 My Portfolio
             </a>
-            <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12">
+            <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
                 <li><a class="naviLink" href="#landing">Home</a></li>
                 <li><a class="naviLink" href="#about">About</a></li>
                 <li><a class="naviLink" href="#works">Projects</a></li>
                 <li><a class="naviLink" href="#contact">Contact</a></li>
-            </ul>        
+            </ul>
         </nav>
     </div>
+
   </div>
 
   <transition name="fade" mode="out-in">
