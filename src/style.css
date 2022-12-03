@@ -4,7 +4,8 @@
 
 @layer components {
   .naviLink {
-    @apply text-sm hover:text-[#395144] font-semibold;
+    @apply text-sm hover:text-customGreenDarker font-semibold transition-all p-2
+    hover:border-2 hover:border-customGreenDarker hover:rounded-xl;
   }
   .sectionContainer {
     @apply w-full h-screen flex flex-col scroll-smooth;
