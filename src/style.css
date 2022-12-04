@@ -3,16 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  /* Nav bar */
   .naviLink {
     @apply text-sm font-semibold transition-all p-2
     hover:text-customBeigeDarker;
-  }
-  .sectionContainer {
-    @apply w-full h-full lg:h-screen flex flex-col scroll-smooth;
-  }
-  .iconAnchor {
-    @apply border-2 shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mx-5 
-    border-transparent hover:border-customGreenDarker hover:shadow-none;
   }
   .naviLinkActive {
     @apply border-customGreenDark border-b-2 transition-all;
@@ -26,6 +20,41 @@
   .sideNaviText {
     @apply block p-4 text-sm font-semibold hover:bg-customBeigeDarker hover:text-white rounded-full;
   }
+
+  /* Landing */
+  .sectionContainer {
+    @apply w-full h-full lg:h-screen flex flex-col scroll-smooth;
+  }
+
+  /* About Page */
+  .aboutTitle {
+    @apply text-5xl font-bold align-middle text-center w-full mt-10 md:mt-0;
+  }
+  .aboutContent {
+    @apply md:w-2/3 w-full h-2/3 flex flex-col justify-between lg:flex-row mx-auto;
+  }
+  .myPicture {
+    @apply rounded-full aspect-square lg:h-2/3 object-cover m-auto h-32;
+  }
+
+  .aboutInfo {
+    @apply flex flex-col justify-center w-2/3 mx-auto;
+  }
+  .aboutParagraph {
+    @apply font-bold align-middle text-center w-2/3 mx-auto;
+  }
+
+  .iconAnchor {
+    @apply border-2 shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mx-5 
+    border-transparent hover:border-customGreenDarker hover:shadow-none;
+  }
+  .iconAnchorActive {
+    @apply border-customGreenDarker border-2 transition-all;
+  }
+  .iconTip {
+    @apply absolute mt-20 text-xs bg-black text-white p-1 font-bold group-hover:block hidden transition-all duration-200;
+  }
+
   .techItemsContainer {
     @apply font-bold w-full flex flex-wrap justify-center my-7;
   }
