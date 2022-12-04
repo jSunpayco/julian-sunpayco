@@ -8,7 +8,7 @@
     hover:text-customBeigeDarker;
   }
   .sectionContainer {
-    @apply w-full h-screen lg:h-screen flex flex-col scroll-smooth;
+    @apply w-full h-full lg:h-screen flex flex-col scroll-smooth;
   }
   .iconAnchor {
     @apply border-2 shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mx-5 
@@ -26,8 +26,11 @@
   .sideNaviText {
     @apply block p-4 text-sm font-semibold hover:bg-customBeigeDarker hover:text-white rounded-full;
   }
+  .techItemsContainer {
+    @apply font-bold w-full flex flex-wrap justify-center my-7;
+  }
   .techItems {
-    @apply text-center flex flex-row justify-center m-1 border-2 shadow-lg bg-customBeigeDark rounded-full p-2;
+    @apply text-center m-1 shadow-lg bg-customGreenDark text-white rounded-full p-2;
   }
 }
 

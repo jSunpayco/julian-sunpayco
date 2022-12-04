@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "swiper": "^8.4.5",
+    "gsap": "^3.11.3",
     "vue": "^3.2.41",
     "vue3-scroll-spy": "^1.0.8"
   },
