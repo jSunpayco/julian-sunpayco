@@ -72,6 +72,21 @@
   .workInfo {
     @apply my-5 mx-4 flex flex-row justify-between;
   }
+
+  .workDescription {
+    @apply absolute bg-customGreenDark text-white rounded-t-lg h-full w-full opacity-0 hover:opacity-100 transition-opacity px-6 py-4;
+  }
+
+  .linkStyle {
+    @apply font-normal text-blue-600 underline;
+  }
+
+  .techItemsContainerWork {
+    @apply mx-2 font-normal w-full flex flex-wrap justify-start;
+  }
+  .techItemsWork {
+    @apply text-center m-1 bg-customGreenDark text-white rounded-md p-2 text-xs pointer-events-none;
+  }
 }
 
 @font-face {
