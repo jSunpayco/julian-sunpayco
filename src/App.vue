@@ -26,7 +26,7 @@ export default {
             <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
                 <li><a class="naviLink" href="#landing">Home</a></li>
                 <li><a class="naviLink" href="#about">About</a></li>
-                <li><a class="naviLink" href="#works">Projects</a></li>
+                <li><a class="naviLink" href="#works">Experience</a></li>
                 <li><a class="naviLink" href="#contact">Contact</a></li>
             </ul>
             <div class="mx-5">

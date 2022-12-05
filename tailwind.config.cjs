@@ -11,7 +11,7 @@ module.exports = {
         'customGreenDark': '#4E6C50',
         'customBeigeDarker': '#AA8B56',
         'customBeigeDark': '#F0EBCE',
-        'customBeigeDark2': '#e7e0b2'
+        'customBeigeLight': '#E4DBA7'
       }
     },
   },

@@ -23,7 +23,7 @@
 
   /* Landing */
   .sectionContainer {
-    @apply w-full h-full lg:h-screen flex flex-col scroll-smooth;
+    @apply w-full h-full lg:h-screen min-h-screen flex flex-col scroll-smooth;
   }
 
   /* About Page */
@@ -31,7 +31,7 @@
     @apply text-5xl font-bold align-middle text-center w-full mt-10 md:mt-0;
   }
   .aboutContent {
-    @apply md:w-2/3 w-full h-2/3 flex flex-col justify-between lg:flex-row mx-auto;
+    @apply md:w-2/3 w-full h-2/3 flex flex-col justify-between xl:flex-row mx-auto;
   }
   .myPicture {
     @apply rounded-full aspect-square lg:h-2/3 object-cover m-auto h-32;
@@ -60,6 +60,17 @@
   }
   .techItems {
     @apply text-center m-1 shadow-lg bg-customGreenDark text-white rounded-full p-2;
+  }
+
+  /* Exprience page */
+  .workGridContainer {
+    @apply w-5/6 h-2/3 mx-auto mb-24;
+  }
+  .workGrid {
+    @apply grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14;
+  }
+  .workInfo {
+    @apply my-5 mx-4 flex flex-row justify-between;
   }
 }
 
