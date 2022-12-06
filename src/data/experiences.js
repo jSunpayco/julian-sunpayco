@@ -25,7 +25,7 @@ const experiences = [
         linkName: "eScience",
         link: "https://www.electronicscience.com/products/edtr.html",
         year: "2022",
-        description: "Performed web development tasks for EDTR's web component, an attendance and inventory monitoring system tailored for merchandising services.",
+        description: "Performed tasks for the web component of an attendance and inventory monitoring system tailored for merchandising services.",
         techs: ["Angular", "JavaScript", "Python", "AWS SDK"],
         preview: 'escience.png'
     },
@@ -35,7 +35,7 @@ const experiences = [
         linkName: "demo",
         link: "https://dota-drafter.vercel.app/",
         year: "2022",
-        description: "A MERN stack application for DOTA2 players where players take turns in picking and banning a character within a time limit.",
+        description: "A MERN stack application for DOTA2 players to take turns in picking and banning a character within a time limit.",
         techs: ["React", "CSS", "MantineUI", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
         preview: 'drafter.png'
     },
@@ -45,7 +45,7 @@ const experiences = [
         linkName: "demo",
         link: "http://localhost:5173/",
         year: "2022",
-        description: "Thanks for visiting my web portfolio. If you are more interested about me, please feel free to contact my email/social media accounts.",
+        description: "This is where you're currently at! This was made in hopes of expanding my knowledge on JS frameworks while showcasing my past experiences in the field.",
         techs: ["Vue", "JavaScript", "Vite", "Tailwind", "GSAP"],
         preview: 'portfolio.png'
     }

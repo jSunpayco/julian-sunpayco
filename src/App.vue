@@ -21,7 +21,7 @@ export default {
     <div id="naviBar" class="container px-4 mx-auto max-w-7xl">
         <nav class="flex justify-between items-center py-8">
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">
-                My Portfolio
+                Sunpayco
             </a>
             <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
                 <li><a class="naviLink" href="#landing">Home</a></li>

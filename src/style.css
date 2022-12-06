@@ -41,7 +41,7 @@
     @apply flex flex-col justify-center w-2/3 mx-auto;
   }
   .aboutParagraph {
-    @apply font-bold align-middle text-center w-2/3 mx-auto;
+    @apply font-normal text-justify w-2/3 mx-auto;
   }
 
   .iconAnchor {
@@ -59,7 +59,7 @@
     @apply font-bold w-full flex flex-wrap justify-center my-7;
   }
   .techItems {
-    @apply text-center m-1 shadow-lg bg-customGreenDark text-white rounded-full p-2;
+    @apply text-center m-1 shadow-lg bg-customGreenDark text-white rounded-full p-2 pointer-events-none;
   }
 
   /* Exprience page */
@@ -67,7 +67,7 @@
     @apply w-5/6 h-2/3 mx-auto mb-24;
   }
   .workGrid {
-    @apply grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14;
+    @apply grid xs:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14;
   }
   .workInfo {
     @apply my-5 mx-4 flex flex-row justify-between;

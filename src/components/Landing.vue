@@ -5,7 +5,7 @@
   <div class="sectionContainer">
     <div class=" sticky top-32">
       <h1 id="titleName" class="font-bold text-center">Julian Sunpayco</h1>
-      <p class="font-bold text-center mt-7 text-xl">Hi! I like to make stuff on the web. Here are a few things about me.</p>
+      <p class="font-bold text-center mt-7 text-xl">Hi! I like to make stuff on the web. Here are a few ways to contact me.</p>
       
       <div class="flex justify-center mt-7">
 

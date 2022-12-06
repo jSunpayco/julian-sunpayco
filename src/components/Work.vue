@@ -1,16 +1,10 @@
 <script>
 export default{
-    props: ['aWork'],
-    data() {
-		return {
-            mySkills: new URL(`../../images/${this.aWork.preview}`, import.meta.url).href
-		};
-	}
+    props: ['aWork']
 }
 </script>
 
 <template>
-    <!-- <p class="techItems">{{mySkills}}</p> -->
     <div class="rounded-lg h-full">
         <div class="relative">
             <div class="workDescription">
@@ -21,7 +15,7 @@ export default{
             <img :src="`../../images/${this.aWork.preview}`" class="aspect-video rounded-t-lg"/>
         </div>
         <div class="workInfo">
-            <p class="font-bold">{{aWork.title}} @ <a :href="aWork.link" class="linkStyle">{{aWork.linkName}}</a></p>
+            <p class="font-bold">{{aWork.title}} @ <a :href="aWork.link" class="linkStyle" target="_blank">{{aWork.linkName}}</a></p>
             <p>{{aWork.year}}</p>
         </div>
         <ul class="techItemsContainerWork">
