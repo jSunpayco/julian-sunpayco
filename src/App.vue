@@ -17,17 +17,16 @@ export default {
 
 <template>
   
-  <div class="w-screen fixed z-10 bg-customBeigeDark sm:bg-transparent">
-    <div id="naviBar" class="container px-4 mx-auto max-w-7xl">
-        <nav class="flex justify-between items-center py-8">
+  <div class="w-screen fixed z-10 bg-customBeigeDark">
+    <div class="container px-4 mx-auto max-w-7xl">
+        <nav class="flex justify-between items-center py-4">
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">
                 Sunpayco
             </a>
             <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
-                <li><a class="naviLink" href="#landing">Home</a></li>
-                <li><a class="naviLink" href="#about">About</a></li>
-                <li><a class="naviLink" href="#works">Experience</a></li>
-                <li><a class="naviLink" href="#contact">Contact</a></li>
+                <li class="w-14"><a class="naviLink" href="#landing">Home</a></li>
+                <li class="w-14"><a class="naviLink" href="#about">About</a></li>
+                <li class="w-14"><a class="naviLink" href="#works">Experience</a></li>
             </ul>
             <div class="mx-5">
               <button class="lg:hidden block text-black hover:text-customBeigeDarker" @click.prevent="toggle()">
@@ -47,7 +46,7 @@ export default {
       :class="[open ? 'visible' : 'invisible']">
         <div class="flex items-center mb-12">
             <button class="navbar-close" @click.prevent="toggle()">
-                <svg class="h-6 w-6 cursor-pointer hover:text-customBeigeDarker" xmlns="http://www.w3.org/2000/svg"
+                <svg class="h-6 w-6 cursor-pointer hover:text-customGreenDarker" xmlns="http://www.w3.org/2000/svg"
                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M6 18L18 6M6 6l12 12"></path>
@@ -58,8 +57,7 @@ export default {
             <ul>
                 <li class="mb-1"><a @click="toggle()" class="sideNaviText" href="#landing">Home</a></li>
                 <li class="mb-1"><a @click="toggle()" class="sideNaviText" href="#about">About</a></li>
-                <li class="mb-1"><a @click="toggle()" class="sideNaviText" href="#works">Projects</a></li>
-                <li class="mb-1"><a @click="toggle()" class="sideNaviText" href="#contact">Contact</a></li>
+                <li class="mb-1"><a @click="toggle()" class="sideNaviText" href="#works">Experience</a></li>
             </ul>
         </div>
     </nav>
@@ -76,7 +74,7 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  background-color: #F0EBCE;
+  background-color: #395144;
 }
 .naviLink:active{
   border-bottom: 2px solid rebeccapurple;

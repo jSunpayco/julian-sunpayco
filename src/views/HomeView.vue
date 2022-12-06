@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div v-scroll-spy>
+    <div>
       <section id="landing">
         <Landing />
       </section>

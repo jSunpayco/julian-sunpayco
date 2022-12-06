@@ -6,19 +6,16 @@
   /* Nav bar */
   .naviLink {
     @apply text-sm font-semibold transition-all p-2
-    hover:text-customBeigeDarker;
-  }
-  .naviLinkActive {
-    @apply border-customGreenDark border-b-2 transition-all;
+    hover:text-base hover:border-customGreenDark hover:border-b-2;
   }
   .sideNaviContainer {
     @apply transition-all duration-500 w-4/6 fixed z-50 h-screen;
   }
   .sideNavi {
-    @apply relative flex flex-col py-6 px-6 w-full h-full bg-white overflow-y-auto transition-all duration-500;
+    @apply relative flex flex-col py-6 px-6 w-full h-full bg-customGreenDark overflow-y-auto transition-all duration-700;
   }
   .sideNaviText {
-    @apply block p-4 text-sm font-semibold hover:bg-customBeigeDarker hover:text-white rounded-full;
+    @apply block p-4 text-sm font-semibold hover:bg-customBeigeDark text-white hover:text-black rounded-full;
   }
 
   /* Landing */
