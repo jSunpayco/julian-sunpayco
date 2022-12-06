@@ -3,11 +3,11 @@
 
 <template>
   <div class="sectionContainer">
-    <div class=" sticky top-32">
-      <h1 id="titleName" class="font-bold text-center">Julian Sunpayco</h1>
-      <p class="font-bold text-center mt-7 text-xl">Hi! I like to make stuff on the web. Here are a few ways to contact me.</p>
+    <div class="mx-auto mt-24 w-2/3 xl:w-full">
+      <h1 id="titleName" class="mx-auto font-bold text-center xl:text-start text-white w-full">Welcome!</h1>
+      <p class="font-normal text-lg text-white text-justify">My name is Julian Sunpayco and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience in the fields of Front-end  or Full-Stack Development. Feel free to contact me through one of these platforms.</p>
       
-      <div class="flex justify-center mt-7">
+      <div class="flex justify-center xl:justify-start mt-7">
 
         <a href="https://www.linkedin.com/in/julian-rafael-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
@@ -37,7 +37,7 @@
 
 <style scoped>
 #titleName{
-  font-size: 15vh;
+  font-size: 10vh;
   font-family: "Butler";
 }
 </style>

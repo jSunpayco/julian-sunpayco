@@ -15,9 +15,9 @@ export default{
 </script>
 
 <template>
-  <div class="sectionContainer justify-evenly h-full">
-    <h1 class="aboutTitle my-24">My Experience</h1>
-    
+  <div class="worksContainer">
+    <h1 class="aboutTitle mt-2">My Experience</h1>
+
     <div class="workGridContainer">
       <div class="workGrid">
         <div v-for="item in exps" :key="item">

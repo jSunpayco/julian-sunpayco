@@ -12,8 +12,10 @@ export default {
 
 <template>
     <div>
-      <section id="landing">
+      <section id="landing" class="flex flex-col mx-5 xl:flex-row">
         <Landing />
+        <Works />
+        <Works />
       </section>
 
       <!-- <div class="one"></div>
@@ -21,7 +23,7 @@ export default {
       <div class="thr"></div>
       <div class="fou"></div> -->
 
-      <section id="about">
+      <!-- <section id="about">
           <About/>
       </section>
 
@@ -31,7 +33,7 @@ export default {
 
       <section id="contact">
           <Contact/>
-      </section>
+      </section> -->
     </div>
 </template>
 

@@ -76,7 +76,4 @@ html {
 body{
   background-color: #395144;
 }
-.naviLink:active{
-  border-bottom: 2px solid rebeccapurple;
-}
 </style>
