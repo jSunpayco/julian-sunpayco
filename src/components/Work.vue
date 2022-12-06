@@ -15,8 +15,8 @@ export default{
             <img :src="`../../images/${this.aWork.preview}`" class="aspect-video rounded-t-lg"/>
         </div>
         <div class="workInfo">
-            <p class="font-bold">{{aWork.title}} @ <a :href="aWork.link" class="linkStyle" target="_blank">{{aWork.linkName}}</a></p>
-            <p>{{aWork.year}}</p>
+            <p class="font-bold text-white xl:text-black">{{aWork.title}} @ <a :href="aWork.link" class="linkStyle" target="_blank">{{aWork.linkName}}</a></p>
+            <p class="text-white xl:text-black">{{aWork.year}}</p>
         </div>
         <ul class="techItemsContainerWork">
             <li class="techItemsWork" v-for="item in aWork.techs" :key="item">

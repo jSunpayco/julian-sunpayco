@@ -67,20 +67,24 @@
 
   /* Landing */
   .sectionContainer {
-    @apply w-2/3 lg:w-full lg:h-screen flex flex-col mx-auto xl:mx-10;
+    @apply w-2/3 lg:w-full lg:h-screen flex flex-col mx-auto xl:mx-10 h-full;
   }
 
   /* Exprience page */
   .worksContainer {
-    @apply h-screen max-h-[83vh] bg-customBeigeDark rounded-3xl mx-10 mt-28 overflow-scroll no-scrollbar min-w-fit;
+    @apply h-full xl:h-screen xl:max-h-[83vh] xl:bg-customBeigeDark rounded-3xl mx-10 mt-14 xl:mt-28 overflow-scroll no-scrollbar min-w-fit;
+  }
+
+  .worksTitle {
+    @apply text-5xl font-bold text-white xl:text-black align-middle text-center w-full mt-10 md:mt-0;
   }
 
   .workGridContainer {
-    @apply max-w-sm h-full mx-auto p-8 m-2;
+    @apply xl:max-w-sm h-full mx-auto p-8 m-2;
   }
 
   .workGrid {
-    @apply grid grid-cols-1 gap-8;
+    @apply grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-8;
   }
 
   .workInfo {
@@ -92,14 +96,14 @@
   }
 
   .linkStyle {
-    @apply font-normal text-blue-600 underline;
+    @apply font-normal text-blue-300 xl:text-blue-600 underline;
   }
 
   .techItemsContainerWork {
     @apply font-normal w-full flex flex-wrap justify-start;
   }
   .techItemsWork {
-    @apply text-center m-1 bg-customGreenDark text-white rounded-md p-2 text-xs pointer-events-none;
+    @apply text-center m-1 bg-customBeigeDark xl:bg-customGreenDark xl:text-white rounded-md p-2 text-xs pointer-events-none;
   }
 }
 

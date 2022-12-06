@@ -16,7 +16,7 @@ export default{
 
 <template>
   <div class="worksContainer">
-    <h1 class="aboutTitle mt-2">My Experience</h1>
+    <h1 class="worksTitle mt-2">My Experience</h1>
 
     <div class="workGridContainer">
       <div class="workGrid">

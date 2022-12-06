@@ -19,7 +19,7 @@ export default {
   
   <div class="w-screen fixed z-10 bg-customBeigeDark">
     <div class="container px-4 mx-auto max-w-7xl">
-        <nav class="flex justify-between items-center py-4">
+        <nav class="flex justify-between items-center py-2">
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">
                 Sunpayco
             </a>

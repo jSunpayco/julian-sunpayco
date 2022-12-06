@@ -30,6 +30,9 @@
         </a>
 
       </div>
+      <h1 id="titleName" class="mx-auto font-bold text-center xl:text-start text-white w-full">Welcome!</h1>
+      <h1 id="titleName" class="mx-auto font-bold text-center xl:text-start text-white w-full">Welcome!</h1>
+      <h1 id="titleName" class="mx-auto font-bold text-center xl:text-start text-white w-full">Welcome!</h1>
 
     </div>
   </div>
