@@ -91,10 +91,6 @@
     @apply my-2 mx-1 flex flex-row justify-between;
   }
 
-  .workDescription {
-    @apply absolute bg-customGreenDark text-white rounded-t-lg h-full w-full opacity-0 hover:opacity-100 transition-opacity px-6 py-4;
-  }
-
   .linkStyle {
     @apply font-normal text-blue-300 xl:text-blue-600 underline;
   }

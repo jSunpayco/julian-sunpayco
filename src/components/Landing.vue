@@ -3,7 +3,7 @@
 
 <template>
   <div class="sectionContainer">
-    <div class="mx-auto mt-24 w-2/3 xl:w-full">
+    <div class="mx-auto mt-24 md:w-2/3 xl:w-full">
       <h1 id="titleName" class="mx-auto font-bold text-center xl:text-start text-white w-full">Welcome!</h1>
       <p class="font-normal text-lg text-white text-justify">My name is Julian Sunpayco and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience in the fields of Front-end  or Full-Stack Development. Feel free to contact me through one of these platforms.</p>
       
