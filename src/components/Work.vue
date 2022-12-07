@@ -5,8 +5,8 @@ export default{
 </script>
 
 <template>
-    <div class="rounded-lg h-full p-4">
-        <img :src="`../../images/${this.aWork.preview}`" class="aspect-video"/>
+    <div class="h-full p-2">
+        <img :src="`../../images/${this.aWork.preview}`" class="aspect-video cursor-pointer rounded-t-2xl"/>
         <div class="workInfo">
             <p class="font-bold text-black">{{aWork.title}}</p>
             <p class="text-black">{{aWork.year}}</p>

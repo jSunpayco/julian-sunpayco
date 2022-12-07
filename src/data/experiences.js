@@ -36,7 +36,7 @@ const experiences = [
         link: "https://dota-drafter.vercel.app/",
         year: "Nov 2022",
         description: "A MERN stack application for DOTA2 players to take turns in picking and banning a character within a time limit.",
-        techs: ["React", "CSS", "MantineUI", "TypeScript", "NodeJS", "ExpressJS", "MongoDB"],
+        techs: ["MERN", "CSS", "MantineUI", "TypeScript"],
         preview: 'drafter.png'
     },
     {

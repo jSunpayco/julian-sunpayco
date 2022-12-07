@@ -72,11 +72,11 @@
 
   /* Exprience page */
   .worksContainer {
-    @apply h-full mx-auto xl:mx-10 rounded-3xl lg:mt-20 no-scrollbar border-2 border-red-700;
+    @apply h-full mx-10 rounded-3xl mt-20 no-scrollbar border-x-2 border-red-700 border-opacity-0;
   }
 
   .worksTitle {
-    @apply text-5xl font-bold text-black align-middle text-center w-full mt-10 md:mt-0;
+    @apply text-6xl font-bold text-black align-middle text-center w-full md:mt-0;
   }
 
   .workGridContainer {
@@ -84,7 +84,7 @@
   }
 
   .workGrid {
-    @apply grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-8;
+    @apply grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-x-8 gap-y-4;
   }
 
   .workInfo {
@@ -99,7 +99,7 @@
     @apply font-normal w-full flex flex-wrap justify-start;
   }
   .techItemsWork {
-    @apply text-center m-1 bg-customBeigeDark xl:bg-customGreenDark xl:text-white rounded-md p-2 text-xs pointer-events-none;
+    @apply text-center m-1 bg-customGreenDark text-white rounded-md p-2 text-xs pointer-events-none;
   }
 }
 

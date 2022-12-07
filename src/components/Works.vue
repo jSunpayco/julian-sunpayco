@@ -16,11 +16,11 @@ export default{
 
 <template>
   <div class="worksContainer">
-    <h1 class="worksTitle mt-2">My Experience</h1>
+    <h1 id="titleName" class="worksTitle">My Experience</h1>
 
     <div class="workGridContainer">
       <div class="workGrid">
-        <div v-for="item in exps" :key="item">
+        <div v-for="item in exps.slice().reverse()" :key="item">
           <Work :aWork="item"></Work>
         </div>
       </div>
@@ -30,4 +30,7 @@ export default{
 </template>
 
 <style scoped>
+#titleName{
+  font-family: "Butler";
+}
 </style>

@@ -14,7 +14,6 @@ export default {
     <div>
       <section id="landing">
         <Landing />
-        <Works />
       </section>
 
       <!-- <div class="one"></div>
@@ -24,13 +23,13 @@ export default {
 
       <!-- <section id="about">
           <About/>
-      </section>
+      </section> -->
 
       <section id="works">
           <Works/>
       </section>
 
-      <section id="contact">
+      <!-- <section id="contact">
           <Contact/>
       </section> -->
     </div>

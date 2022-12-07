@@ -4,7 +4,7 @@
 <template>
   <div class="sectionContainer">
     <div class="mt-24 md:px-10 lg:px-0 w-full md:w-1/2">
-      <h1 id="titleName" class="mx-auto font-bold text-center lg:text-start text-customRaisin w-full text-8xl">Welcome!</h1>
+      <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-8xl">Welcome!</h1>
       <p class="font-normal text-lg text-black text-justify">My name is <span class="font-bold">Julian Sunpayco</span> and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
       
       <div class="flex justify-center xl:justify-start mt-2">
@@ -40,7 +40,7 @@
 
     </div>
 
-    <image src="../../images/Grad.png" class="max-h-[540px] mt-24 aspect-auto"/>
+    <image src="../../images/Grad.png" class="max-h-[680px] mt-24 aspect-auto"/>
   </div>
 </template>
 
