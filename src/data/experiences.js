@@ -7,7 +7,8 @@ const experiences = [
         year: "Dec 2021",
         description: "Data visualization to analyze data of second-hand cars being auctioned in North America.",
         techs: ["Tableau"],
-        preview: 'secondhand.png'
+        preview: 'secondhand.png',
+        type: 'Academic'
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const experiences = [
         year: "Mar - Jun 2022",
         description: "A prototype for a carpooling application. The design of the app was modified after every iteration that included UX testing.",
         techs: ["Figma", "UX Design"],
-        preview: 'pasakay.png'
+        preview: 'pasakay.png',
+        type: 'Academic'
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ const experiences = [
         year: "Jul - Oct 2022",
         description: "Performed tasks for the web component of an attendance and inventory monitoring system tailored for merchandising services.",
         techs: ["Angular", "JavaScript", "Python", "AWS SDK"],
-        preview: 'escience.png'
+        preview: 'escience.png',
+        type: 'Professional'
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ const experiences = [
         year: "Nov 2022",
         description: "A MERN stack application for DOTA2 players to take turns in picking and banning a character within a time limit.",
         techs: ["MERN", "CSS", "MantineUI", "TypeScript"],
-        preview: 'drafter.png'
+        preview: 'drafter.png',
+        type: 'Personal'
     },
     {
         id: 5,
@@ -46,8 +50,9 @@ const experiences = [
         link: "http://localhost:5173/",
         year: "Dec 2022",
         description: "This is where you're currently at! This was made in hopes of expanding my knowledge on JS frameworks while showcasing my past experiences in the field.",
-        techs: ["Vue", "JavaScript", "Vite", "Tailwind", "GSAP"],
-        preview: 'portfolio.png'
+        techs: ["Vue", "JavaScript", "Tailwind", "GSAP"],
+        preview: 'portfolio.png',
+        type: 'Personal'
     }
 ]
 

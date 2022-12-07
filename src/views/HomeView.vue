@@ -3,10 +3,11 @@ import Landing from '@/components/Landing.vue';
 import About from '@/components/About.vue';
 import Works from '@/components/Works.vue';
 import Contact from '@/components/Contact.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: "App",
-  components: { Landing, About, Works, Contact }
+  components: { Landing, About, Works, Contact, Footer }
 };
 </script>
 
@@ -32,6 +33,10 @@ export default {
       <!-- <section id="contact">
           <Contact/>
       </section> -->
+
+      <section id="footer">
+          <Footer/>
+      </section>
     </div>
 </template>
 

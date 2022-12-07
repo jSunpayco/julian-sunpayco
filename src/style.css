@@ -48,7 +48,7 @@
   }
 
   .iconAnchor {
-    @apply border-2 flex items-center justify-center text-black text-xs rounded-full transition-all mr-5 
+    @apply border-2 flex items-center justify-center text-white text-xs rounded-full transition-all mr-5 
     border-transparent hover:scale-125;
   }
   .iconAnchorActive {
@@ -67,12 +67,12 @@
 
   /* Landing */
   .sectionContainer {
-    @apply flex flex-col mx-auto px-10 md:flex-row justify-around h-auto basis-0;
+    @apply flex flex-col mx-auto px-10 lg:flex-row justify-around h-auto basis-0;
   }
 
   /* Exprience page */
   .worksContainer {
-    @apply h-full mx-10 rounded-3xl mt-20 no-scrollbar border-x-2 border-red-700 border-opacity-0;
+    @apply h-full mx-10 rounded-3xl pt-24 no-scrollbar;
   }
 
   .worksTitle {
