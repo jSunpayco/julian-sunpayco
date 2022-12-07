@@ -17,19 +17,19 @@ export default {
 
 <template>
   
-  <div class="w-screen fixed z-10 bg-customBeigeDark">
+  <div class="w-screen fixed z-10 bg-customBeigeLight">
     <div class="container px-4 mx-auto max-w-7xl">
         <nav class="flex justify-between items-center py-2">
-            <a class="uppercase font-extrabold text-base py-2 rounded-full text-black" href="/#landing">
+            <a class="uppercase font-extrabold text-base py-2 rounded-full text-customRaisin" href="/#landing">
                 Sunpayco
             </a>
-            <ul class="hidden lg:flex ml-auto items-center w-auto space-x-12" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
-                <li class="w-14"><a class="naviLink" href="#landing">Home</a></li>
-                <li class="w-14"><a class="naviLink" href="#about">About</a></li>
-                <li class="w-14"><a class="naviLink" href="#works">Experience</a></li>
+            <ul class="hidden lg:flex ml-auto my-4 items-center w-auto space-x-12 text-customJet" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
+                <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
+                <li class="w-14"><a class="naviLink" href="#about">ABOUT</a></li>
+                <li class="w-14"><a class="naviLink" href="#works">EXPERIENCE</a></li>
             </ul>
             <div class="mx-5">
-              <button class="lg:hidden block text-black hover:text-customBeigeDarker" @click.prevent="toggle()">
+              <button class="lg:hidden block text-white hover:text-customBeigeDarker" @click.prevent="toggle()">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                 </svg>
@@ -74,6 +74,7 @@ html {
   scroll-behavior: smooth;
 }
 body{
-  background-color: #395144;
+  background-color: #E6E4D7;
+  /* background-color: #84DCCF; */
 }
 </style>

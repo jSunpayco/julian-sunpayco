@@ -17,7 +17,7 @@
   /* Nav bar */
   .naviLink {
     @apply text-sm font-semibold transition-all p-2
-    hover:text-base hover:border-customGreenDark hover:border-b-2;
+    hover:border-customRose hover:border-b-2;
   }
   .sideNaviContainer {
     @apply transition-all duration-500 w-4/6 fixed z-50 h-screen;
@@ -48,8 +48,8 @@
   }
 
   .iconAnchor {
-    @apply border-2 shadow-lg flex items-center justify-center p-3 text-black text-xs rounded-full transition-all mr-5 
-    border-transparent hover:border-customBeigeDarker hover:shadow-none hover:border-2 bg-customBeigeDark;
+    @apply border-2 flex items-center justify-center text-black text-xs rounded-full transition-all mr-5 
+    border-transparent hover:scale-125;
   }
   .iconAnchorActive {
     @apply border-customGreenDarker border-2 transition-all;
@@ -67,24 +67,24 @@
 
   /* Landing */
   .sectionContainer {
-    @apply w-2/3 lg:w-full lg:h-screen flex flex-col mx-auto xl:mx-10 h-full;
+    @apply flex flex-col mx-auto px-10 md:flex-row justify-around h-auto basis-0;
   }
 
   /* Exprience page */
   .worksContainer {
-    @apply h-full xl:h-screen xl:max-h-[83vh] xl:bg-customBeigeDark rounded-3xl mx-10 mt-14 xl:mt-28 overflow-scroll no-scrollbar min-w-fit;
+    @apply h-full mx-auto xl:mx-10 rounded-3xl lg:mt-20 no-scrollbar border-2 border-red-700;
   }
 
   .worksTitle {
-    @apply text-5xl font-bold text-white xl:text-black align-middle text-center w-full mt-10 md:mt-0;
+    @apply text-5xl font-bold text-black align-middle text-center w-full mt-10 md:mt-0;
   }
 
   .workGridContainer {
-    @apply xl:max-w-sm h-full mx-auto p-8 m-2;
+    @apply h-full mx-auto p-8 m-2;
   }
 
   .workGrid {
-    @apply grid xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-8;
+    @apply grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-8;
   }
 
   .workInfo {

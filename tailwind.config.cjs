@@ -18,7 +18,14 @@ module.exports = {
         'customGreenDark': '#4E6C50',
         'customBeigeDarker': '#AA8B56',
         'customBeigeDark': '#F0EBCE',
-        'customBeigeLight': '#E4DBA7'
+        'customBeigeLight': '#E6E4D7',
+        'customRetroGreen': '#4E7C71',
+
+        'customLavender' : '#F6E8EA',
+        'customRose' : '#DB3C26',
+        'customRaisin': '#22181C',
+        'customJet': '#312F2F',
+        'customMint': '#84DCCF'
       }
     },
   },

@@ -5,11 +5,11 @@ export default{
 </script>
 
 <template>
-    <div class="rounded-lg h-full hover:scale-110 transition-transform cursor-pointer">
-        <img :src="`../../images/${this.aWork.preview}`" class="aspect-video rounded-t-lg"/>
+    <div class="rounded-lg h-full p-4">
+        <img :src="`../../images/${this.aWork.preview}`" class="aspect-video"/>
         <div class="workInfo">
-            <p class="font-bold text-white xl:text-black">{{aWork.title}}</p>
-            <p class="text-white xl:text-black">{{aWork.year}}</p>
+            <p class="font-bold text-black">{{aWork.title}}</p>
+            <p class="text-black">{{aWork.year}}</p>
         </div>
         <ul class="techItemsContainerWork">
             <li class="techItemsWork" v-for="item in aWork.techs" :key="item">

@@ -12,9 +12,8 @@ export default {
 
 <template>
     <div>
-      <section id="landing" class="flex flex-col mx-5 xl:flex-row">
+      <section id="landing">
         <Landing />
-        <Works />
         <Works />
       </section>
 
