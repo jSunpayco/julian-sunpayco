@@ -21,7 +21,7 @@ export default{
       if(type == 'All')
         this.expFiltered = exps
       else
-        this.expFiltered = exps.filter(aWork => aWork.type == type)
+        this.expFiltered = exps.filter(aWork => aWork.type.startsWith(type))
       
       this.currFilter = type
       this.toggle()  
