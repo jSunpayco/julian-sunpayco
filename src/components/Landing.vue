@@ -1,4 +1,5 @@
-<script>
+<script setup>
+
 </script>
 
 <template>
@@ -40,7 +41,7 @@
 
     </div>
 
-    <image src="../../images/Grad.png" class="max-h-[650px] mt-24 aspect-auto"/>
+    <image src="../../images/Grad.png" class="max-h-[650px] mt-24 max-w-[513px] mx-auto lg:mx-0"/>
   </div>
 </template>
 
