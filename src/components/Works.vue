@@ -33,7 +33,7 @@ export default{
 
 <template>
   <div class="worksContainer">
-    <h1 id="titleName" class="worksTitle">My Experience</h1>
+    <h1 id="titleName" class="worksTitle">My Experiences</h1>
 
     <div class="flex justify-end mt-8">
       <button class="flex flex-row justify-between border-2 border-red-800 rounded-lg p-2 w-48 bg-white" @click.prevent="toggle()">

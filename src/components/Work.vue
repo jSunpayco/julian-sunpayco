@@ -6,7 +6,9 @@ export default{
 
 <template>
     <div class="h-full p-2">
-        <img :src="`../../images/${this.aWork.preview}`" class="aspect-video cursor-pointer rounded-t-2xl"/>
+        <router-link :to="{name:'Experience', params:{title:aWork.idName}}">
+            <img :src="`../../images/${this.aWork.preview}`" class="aspect-video cursor-pointer rounded-t-2xl hover:scale-105 transition-transform">
+        </router-link>
         <div class="workInfo">
             <p class="font-bold text-black">{{aWork.title}}</p>
             <p class="text-black">{{aWork.year}}</p>
