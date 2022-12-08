@@ -26,6 +26,9 @@ module.exports = {
         'customRaisin': '#22181C',
         'customJet': '#312F2F',
         'customMint': '#84DCCF'
+      },
+      backgroundImage:{
+        'Grad': "url(/images/Grad.png)"
       }
     },
   },

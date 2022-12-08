@@ -27,7 +27,7 @@ export default {
                 <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
                 <li><a class="naviLink" href="/#landing">ABOUT</a></li>
                 <li><a class="naviLink" href="/#works">EXPERIENCE</a></li>
-                <li><a class="naviLink" href="/#footer">CONTACT</a></li>                
+                <li><a class="naviLink" href="/#footer">CONTACT</a></li>
             </ul>
             <div class="mx-5">
               <button class="lg:hidden block text-white hover:text-customBeigeDarker" @click.prevent="toggle()">
