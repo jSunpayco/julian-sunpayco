@@ -28,7 +28,8 @@ module.exports = {
         'customMint': '#84DCCF'
       },
       backgroundImage:{
-        'Grad': "url(/images/Grad.png)"
+        'Grad': "url(/images/Grad.png)",
+        'static': "url(/images/giphy.gif)"
       }
     },
   },
