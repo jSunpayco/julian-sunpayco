@@ -51,6 +51,10 @@
     @apply grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-x-8 gap-y-4;
   }
 
+  .centerAbsItem {
+    @apply left-1/2 -translate-x-1/2 transform;
+  }
+
   .workInfo {
     @apply my-2 mx-1 flex flex-row justify-between;
   }

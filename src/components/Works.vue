@@ -35,7 +35,7 @@ export default{
   <div class="worksContainer">
     <h1 id="titleName" class="worksTitle">My Experiences</h1>
 
-    <div class="flex justify-end mt-8">
+    <div class="flex justify-center lg:justify-end mt-8">
       <button class="flex flex-row justify-between border-2 border-red-800 rounded-lg p-2 w-48 bg-white" @click.prevent="toggle()">
         <p class="select-none">Filter: {{currFilter}}</p>
         <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></div>
@@ -43,7 +43,7 @@ export default{
     </div>
 
     
-    <div class="absolute right-10 w-48 mt-5 rounded-lg bg-white" :class="[isOpened ? 'visible' : 'invisible']">
+    <div class="absolute -lg:centerAbsItem lg:right-10 mx-auto w-48 mt-5 rounded-lg bg-white z-20" :class="[isOpened ? 'visible' : 'invisible']">
       <ul>
         <li class="p-3 hover:bg-customLavender rounded-t-lg cursor-pointer text-black" @click.prevent="filterWorks('All')">
           <p class="select-none">All</p>
