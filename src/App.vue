@@ -23,7 +23,7 @@ export default {
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-customRaisin" href="/#landing">
                 Sunpayco
             </a>
-            <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet" v-scroll-spy-active="{ class: 'naviLinkActive' }" v-scroll-spy-link >
+            <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet">
                 <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
                 <li><a class="naviLink" href="/#landing">ABOUT</a></li>
                 <li><a class="naviLink" href="/#works">EXPERIENCE</a></li>
