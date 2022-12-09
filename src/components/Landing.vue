@@ -33,13 +33,16 @@ export default{
       setTimeout(() => this.show = false, 650);
     },
     prevArtist: function(){
+      this.tl.restart();
+
+      this.show = true
       if(this.index == 0)
         this.index = 4
       else
         this.index -= 1
-
       this.artists = spotify[this.index]
-      this.tl.restart();
+
+      setTimeout(() => this.show = false, 650);
     }
   }
 }
