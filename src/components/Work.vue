@@ -13,8 +13,8 @@ export default{
             </div>
         </router-link>
         <div class="workInfo">
-            <p class="font-bold text-black">{{aWork.title}}</p>
-            <p class="text-black">{{aWork.year}}</p>
+            <p class="font-bold text-customJet">{{aWork.title}}</p>
+            <p class="text-customJet">{{aWork.year}}</p>
         </div>
         <ul class="techItemsContainerWork">
             <li class="techItemsWork" v-for="item in aWork.techs" :key="item">

@@ -100,7 +100,7 @@ export default{
 
     </div>
 
-    <div class="h-[650px] mt-24 w-[513px] mx-auto lg:mx-0 bg-Grad bg-contain"></div>
+    <div class="h-[680px] mt-24 w-[513px] mx-auto lg:mx-0 bg-Grad bg-cover bg-no-repeat"></div>
 
   </div>
 </template>
