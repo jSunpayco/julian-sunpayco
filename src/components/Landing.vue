@@ -83,10 +83,10 @@ export default{
         <h1 id="titleName" class="m-auto font-bold text-center w-full text-3xl">Top Artists on Spotify</h1>
 
         <div class="flex flex-row justify-center my-2">
-          <button class="w-8 h-8 bg-customJet mr-3 rounded-full hover:scale-125 transition-all" @click.prevent="prevArtist()">
+          <button class="w-8 h-8 bg-customJet mr-3 rounded-full hover:scale-125 transition-all" @click.prevent="prevArtist()" :disabled="show">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" /></svg>
           </button>
-          <button class="w-8 h-8 bg-customJet rounded-full hover:scale-125 transition-all" @click.prevent="nextArtist()">
+          <button class="w-8 h-8 bg-customJet rounded-full hover:scale-125 transition-all" @click.prevent="nextArtist()" :disabled="show">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></svg>
           </button>
         </div>
