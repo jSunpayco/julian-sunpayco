@@ -34,13 +34,13 @@ export default {
     <div class="container px-4 mx-auto max-w-7xl">
         <nav class="flex justify-between items-center py-2">
             <a class="uppercase font-extrabold text-base py-2 rounded-full text-customJet" href="/#landing">
-                Sunpayco
+                sunpayco
             </a>
             <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet">
                 <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
-                <li><a class="naviLink" href="/#landing">ABOUT</a></li>
-                <li><a class="naviLink" href="/#works">EXPERIENCE</a></li>
-                <li><a class="naviLink" href="/#footer">CONTACT</a></li>
+                <li><a class="naviLink" href="/#landing">about</a></li>
+                <li><a class="naviLink" href="/#works">experience</a></li>
+                <li><a class="naviLink" href="/#footer">contact</a></li>
             </ul>
             <div class="mx-5">
               <button class="lg:hidden block text-black hover:text-customRose transition-colors" @click.prevent="toggle()">
@@ -73,9 +73,11 @@ export default {
     </nav>
   </div>
 
-  <transition name="fade" mode="out-in">
-    <router-view />
-  </transition>
+  <router-view v-slot="{ Component, route }">
+    <transition :name="route.query.page">
+      <component :is="Component" :key="$route.path"/>
+    </transition>
+  </router-view>
 </template>
 
 <style>
@@ -86,5 +88,45 @@ html {
 body{
   background-color: #E6E4D7;
   /* background-color: #84DCCF; */
+}
+
+.prev-enter-active{
+  transition: all 0.75s ease-out;
+  transition-delay: 0.75s;
+}
+.prev-leave-active {
+  transition: all 0.75s ease-out;
+}
+.prev-enter-to {
+  transform: translate(0);
+}
+.prev-enter-from {
+  transform: translateX(100%);
+}
+.prev-leave-to {
+  transform: translate(-100%);
+}
+.prev-leave-from {
+  transform: translate(0);
+}
+
+.next-enter-active{
+  transition: all 0.75s ease-out;
+  transition-delay: 0.75s;
+}
+.next-leave-active {
+  transition: all 0.75s ease-out;
+}
+.next-enter-to {
+  transform: translate(0);
+}
+.next-enter-from {
+  transform: translateX(-100%);
+}
+.next-leave-to {
+  transform: translate(100%);
+}
+.next-leave-from {
+  transform: translate(0);
 }
 </style>

@@ -16,7 +16,7 @@
 @layer components {
   /* Nav bar */
   .naviLink {
-    @apply text-sm font-semibold transition-all p-2 text-customJet
+    @apply text-sm font-semibold transition-all p-2 text-customJet uppercase
     after:underlineC after:hover:scale-x-100 after:hover:origin-left relative;
     /* hover:border-customRose hover:border-b-2; */
   }
