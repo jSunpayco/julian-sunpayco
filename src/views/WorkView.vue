@@ -20,11 +20,13 @@ const myWork = exps.find(work => work.idName == route.params.title)
             <div class="detailsContainer">
                 <div class="detailImageContainer">
                     <a class="linkOverImage" :href="myWork.link" target="_blank">Visit</a>
-                    <img :src="`../../images/${myWork.preview}`" class="workDetailImage">
+                    <img :src="`../../images/works/${myWork.preview}`" class="workDetailImage">
                 </div>
+                
+                <h3 class="detailInfoTitle text-center mt-10 hidden xl:block">About the experience</h3>
 
                 <div class="detailInfoContainer">
-                    <h3 class="detailInfoTitle">About the experience</h3>
+                    <h3 class="detailInfoTitle block xl:hidden">About the experience</h3>
                     <p class="mb-0 text-justify px-5">{{myWork.description}}</p>
                     <a class="detailInfoLink" :href="myWork.link" target="_blank">
                         <span class="select-none text-white">Visit</span>

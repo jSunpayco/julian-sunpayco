@@ -9,7 +9,7 @@ export default{
         <router-link :to="{name:'Experience', params:{title:aWork.idName}}">
             <div class="relative">
                 <p class="linkOverImage rounded-t-2xl">Read More</p>
-                <img :src="`../../images/${this.aWork.preview}`" class="aspect-video cursor-pointer rounded-t-2xl transition-all">
+                <img :src="`../../images/works/${this.aWork.preview}`" class="aspect-video cursor-pointer rounded-t-2xl transition-all">
             </div>
         </router-link>
         <div class="workInfo">

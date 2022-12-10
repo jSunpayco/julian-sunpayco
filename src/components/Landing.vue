@@ -92,7 +92,7 @@ export default{
         </div>
 
         <div class="bg-customBeigeDark aspect-square max-h-80 mx-auto lg:mx-0 text-center">
-          <img v-if="(show === false)" :src="`../../images/${artists.img}`" class="px-4 pt-4">
+          <img v-if="(show === false)" :src="`../../images/spotify/${artists.img}`" class="px-4 pt-4">
           <img v-else src="../../images/static.gif" class="px-4 pt-4">
           <a class="text-xl font-normal py-5 inline-block" :href="artists.link" target="_blank" ref="spotifyName">{{artists.name}}</a>
         </div>
