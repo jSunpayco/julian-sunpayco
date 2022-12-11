@@ -29,6 +29,8 @@ export default{
       else
         this.index += 1
       this.artists = spotify[this.index]
+      let temp = new Image(200, 200)
+      temp.src = `/images/spotify/${this.artists.img}`
 
       setTimeout(() => this.show = false, 650);
     },
