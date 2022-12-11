@@ -38,6 +38,10 @@
   .sectionContainer {
     @apply flex flex-col mx-auto px-10 lg:flex-row justify-around h-auto basis-0;
   }
+  .iconAnchor {
+    @apply border-2 flex items-center justify-center text-white text-xs rounded-full transition-all mr-5 
+    border-transparent hover:scale-125;
+  }
 
   /* Exprience page */
   .worksContainer {
