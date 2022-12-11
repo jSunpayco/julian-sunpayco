@@ -32,7 +32,7 @@ export default {
   <div class="sectionContainer justify-center">
     <h1 class="aboutTitle">About Me</h1>
     <div class="aboutContent">
-      <img src="../../images/ID.JPG" class="myPicture"/>
+      <img src="/images/ID.JPG" class="myPicture"/>
       <div class="aboutInfo">
         <p class="aboutParagraph">A graduate of De La Salle University with a Bachelor's Degree in <span class="text-customGreenDarker font-extrabold">Computer Science</span>, Major in Software Technology. I am hoping to gain more experience in the professional industry, especially in the fields of <span class="text-customGreenDarker font-extrabold">Front-end</span> or <span class="text-customGreenDarker font-extrabold">Full-Stack</span> Engineering.</p>
         <p class="mx-auto mt-5 font-normal">Here are some of my skills.</p>

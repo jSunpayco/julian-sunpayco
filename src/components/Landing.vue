@@ -59,22 +59,22 @@ export default{
 
         <a href="https://www.linkedin.com/in/julian-rafael-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
-          <img src="../../images/lin.png" class="h-14"/>
+          <img src="/images/lin.png" class="h-14"/>
         </a>
 
         <a href="https://github.com/jSunpayco" class="iconAnchor" title="GitHub" target="_blank">
           <!-- GitHub -->
-          <img src="../../images/git.png" class="h-14"/>
+          <img src="/images/git.png" class="h-14"/>
         </a>
 
         <a href="mailto:julian.sunpayco@gmail.com" class="iconAnchor" title="Email">
           <!-- Mail -->
-          <img src="../../images/download.png" class="h-14"/>
+          <img src="/images/download.png" class="h-14"/>
         </a>
 
         <a href="https://docs.google.com/document/d/1EZ16z_8f27CigaGc-rS0BvDa1Y-1iiTk/edit?usp=sharing&ouid=108257889502087676299&rtpof=true&sd=true" class="iconAnchor" title="Resume" target="_blank">
           <!-- Resume -->
-          <img src="../../images/resume.png" class="h-14"/>
+          <img src="/images/resume.png" class="h-14"/>
         </a>
 
       </div>
@@ -92,8 +92,8 @@ export default{
         </div>
 
         <div class="bg-customBeigeDark aspect-square max-h-80 mx-auto lg:mx-0 text-center">
-          <img v-if="(show === false)" :src="`../../images/spotify/${artists.img}`" class="px-4 pt-4">
-          <img v-else src="../../images/static.gif" class="px-4 pt-4">
+          <img v-if="(show === false)" :src="`/images/spotify/${artists.img}`" class="px-4 pt-4">
+          <img v-else src="/images/static.gif" class="px-4 pt-4">
           <a id="paragraph" class="text-2xl font-bold pt-5 mb-5 inline-block tracking-wide border-b-2 border-customRose" :href="artists.link" target="_blank" ref="spotifyName">{{artists.name}}</a>
         </div>
       </div>

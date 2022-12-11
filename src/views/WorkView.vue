@@ -58,7 +58,7 @@ const nextArtist = getNext()
             <div class="detailsContainer">
                 <div class="detailImageContainer">
                     <a class="linkOverImage" :href="myWork.link" target="_blank">Visit</a>
-                    <img :src="`../../images/works/${myWork.preview}`" class="workDetailImage">
+                    <img :src="`/images/works/${myWork.preview}`" class="workDetailImage">
                 </div>
                 
                 <h3 class="detailInfoTitle text-center mt-5 hidden xl:block">About the experience</h3>
