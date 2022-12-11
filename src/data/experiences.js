@@ -42,7 +42,7 @@ const experiences = [
         linkName: "demo",
         link: "https://dota-drafter.vercel.app/",
         year: "Nov 2022",
-        description: "My first take on a full-stack project, I had decided to branch out of just learning one JavaScript framework and decided to go for React. Hearing from friends and reading other testimonies online on the so-called more streamlined version of a JS framework, I was obviously curious how different it could be from Angular. Turns out, the reusablility part of React is what drew developers towards it. By creating a template that can be used as many times as you want, you wouldn't need to do so much to perform changes. Additionally, I also took the opportunity to learn some backend development by uploading my data on Mongo Atlas, and then calling them via my own api.",
+        description: "My first take on a full-stack project where I had decided to branch out of just learning one JavaScript framework and decided to go for React. Hearing from friends and reading other testimonies online on the so-called more streamlined version of a JS framework, I was obviously curious how different it could be from Angular. Turns out, the reusablility part of React is what drew developers towards it. By creating a template that can be used as many times as you want, you wouldn't need to do so much to perform changes. Additionally, I also took the opportunity to learn some backend development by uploading my data on Mongo Atlas, and then calling them via my own api.",
         techs: ["MERN", "CSS", "MantineUI", "TypeScript"],
         preview: 'drafter.png',
         type: 'Personal Project'
@@ -52,9 +52,9 @@ const experiences = [
         idName: "my-portfolio-client",
         title: "Julian Sunpayco",
         linkName: "demo",
-        link: "http://localhost:5173/",
+        link: "https://julian-sunpayco.vercel.app/",
         year: "Dec 2022",
-        description: "This is where you're currently at! This was made in hopes of expanding my knowledge on JS frameworks while showcasing my past experiences in the field. This is the first web application I made with Vue JS, and yet another experience added when it comes down to component-based frameworks. Additionally, after learning much CSS, I've decided to give Tailwind a try to see what benefits do styling frameworks provide to developers. One last thing is the integration of an animations library, wherein I used GSAP for this project in order for me to get creative in showing changes in data, or conveying that a component is interactive.",
+        description: "This is where you're currently at! This was made to expand my knowledge on JS frameworks while showcasing my past experiences in the field. This is the first web application I made with Vue JS, and yet another experience added when it comes down to component-based frameworks. Additionally, after learning much CSS, I've decided to give Tailwind a try to see what benefits do styling frameworks provide to developers. As I've concluded, although it does help make writing styling code quicker with its abstraction, it also seems to trade-off with more verbose markups in many cases, and although the @apply gave me the first impression of being able to avoid class duplication, I just noticed that my stylesheet became longer and longer, increasing the value of the existence of reusable HTML components. This could either be a personal roadblock or the drawback of a framework, but there definitely could be improvements on either side.",
         techs: ["Vue", "JavaScript", "Tailwind", "GSAP"],
         preview: 'portfolio.png',
         type: 'Personal Project'
