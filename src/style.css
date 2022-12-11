@@ -30,7 +30,7 @@
     @apply relative flex flex-col py-6 px-6 w-full h-full bg-customJet overflow-y-auto transition-all duration-700;
   }
   .sideNaviText {
-    @apply block p-4 text-sm font-semibold text-white
+    @apply block p-4 text-sm font-normal text-white
       after:underlineC after:hover:scale-x-100 after:hover:origin-left relative;
   }
 
@@ -91,7 +91,7 @@
   }
 
   .detailInfoContainer {
-    @apply flex flex-col xl:flex-row justify-around w-full xl:py-10 items-center;
+    @apply flex flex-col xl:flex-row justify-around w-full xl:py-5 items-center;
   }
   .detailInfoTitle {
     @apply text-xl font-bold py-7 xl:py-0;
@@ -143,4 +143,9 @@
   font-style: bold;
   font-weight: 900;
   src: url("@/assets/fonts/Butler_Black.otf");
+}
+
+@font-face {
+  font-family: "Neuzit", serif;
+  src: url("@/assets/fonts/Neuzeit Grotesk Light.otf");
 }

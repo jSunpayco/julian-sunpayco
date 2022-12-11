@@ -53,7 +53,7 @@ export default{
   <div class="sectionContainer">
     <div class="mt-24 md:px-10 lg:px-0 w-full lg:w-1/2">
       <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-8xl">Welcome!</h1>
-      <p class="font-normal text-lg text-black text-justify">My name is <span class="font-bold">Julian Sunpayco</span> and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
+      <p id="paragraph" class="font-normal text-lg text-customRaisin text-justify tracking-wide">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Full-Stack Development</span>. Feel free to contact me through one of these platforms.</p>
       
       <div class="flex justify-center lg:justify-start mt-2">
 
@@ -80,7 +80,7 @@ export default{
       </div>
     
       <div class="aspect-square max-h-72 mx-auto lg:mx-0 mt-2">
-        <h1 id="titleName" class="m-auto font-bold text-center w-full text-3xl">Top Artists on Spotify</h1>
+        <h1 id="titleName" class="m-auto font-bold text-center w-full text-3xl text-customRaisin">My Spotify's Top 5</h1>
 
         <div class="flex flex-row justify-center my-2">
           <button class="w-8 h-8 bg-customJet mr-3 rounded-full hover:scale-125 transition-all" @click.prevent="prevArtist()" :disabled="show">
@@ -94,7 +94,7 @@ export default{
         <div class="bg-customBeigeDark aspect-square max-h-80 mx-auto lg:mx-0 text-center">
           <img v-if="(show === false)" :src="`../../images/spotify/${artists.img}`" class="px-4 pt-4">
           <img v-else src="../../images/static.gif" class="px-4 pt-4">
-          <a class="text-xl font-normal py-5 inline-block" :href="artists.link" target="_blank" ref="spotifyName">{{artists.name}}</a>
+          <a id="paragraph" class="text-2xl font-bold pt-5 mb-5 inline-block tracking-wide border-b-2 border-customRose" :href="artists.link" target="_blank" ref="spotifyName">{{artists.name}}</a>
         </div>
       </div>
 
@@ -108,5 +108,8 @@ export default{
 <style scoped>
 #titleName{
   font-family: "Butler";
+}
+#paragraph{
+  font-family: "Neuzit";
 }
 </style>

@@ -38,9 +38,9 @@ export default {
             </a>
             <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet">
                 <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
-                <li><a class="naviLink" href="/#landing">about</a></li>
-                <li><a class="naviLink" href="/#works">experience</a></li>
-                <li><a class="naviLink" href="/#footer">contact</a></li>
+                <li><a id="links" class="naviLink" href="/#landing">about</a></li>
+                <li><a id="links" class="naviLink" href="/#works">experience</a></li>
+                <li><a id="links" class="naviLink" href="/#footer">contact</a></li>
             </ul>
             <div class="mx-5">
               <button class="lg:hidden block text-black hover:text-customRose transition-colors" @click.prevent="toggle()">
@@ -66,9 +66,9 @@ export default {
           </button>
       </div>
       <ul>
-          <li id="sideLink" class="mb-1"><a @click="toggle()" class="sideNaviText" href="/#landing">ABOUT</a></li>
-          <li id="sideLink" class="mb-1"><a @click="toggle()" class="sideNaviText" href="/#works">EXPERIENCE</a></li>
-          <li id="sideLink" class="mb-1"><a @click="toggle()" class="sideNaviText" href="/#footer">CONTACT</a></li>
+          <li id="sideLink" class="mb-1 tracking-widest"><a @click="toggle()" class="sideNaviText" href="/#landing">ABOUT</a></li>
+          <li id="sideLink" class="mb-1 tracking-widest"><a @click="toggle()" class="sideNaviText" href="/#works">EXPERIENCE</a></li>
+          <li id="sideLink" class="mb-1 tracking-widest"><a @click="toggle()" class="sideNaviText" href="/#footer">CONTACT</a></li>
       </ul>
     </nav>
   </div>
@@ -88,6 +88,12 @@ html {
 body{
   background-color: #E6E4D7;
   /* background-color: #84DCCF; */
+}
+#links{
+  font-family: "Neuzit";
+}
+#sideLink{
+  font-family: "Neuzit";
 }
 
 .prev-enter-active{
