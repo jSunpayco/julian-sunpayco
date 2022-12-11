@@ -100,42 +100,6 @@
     @apply h-14 w-14 my-7 xl:my-0 font-bold rounded-full bg-customJet flex items-center justify-center p-3 cursor-pointer
       hover:scale-125 transition-all;
   }
-
-  /* About Page Note: Not in use at the moment*/
-  .aboutTitle {
-    @apply text-5xl font-bold text-black align-middle text-center w-full mt-10 md:mt-0;
-  }
-  .aboutContent {
-    @apply md:w-2/3 w-full h-2/3 flex flex-col justify-between xl:flex-row mx-auto;
-  }
-  .myPicture {
-    @apply rounded-full aspect-square lg:h-2/3 object-cover m-auto h-32;
-  }
-
-  .aboutInfo {
-    @apply flex flex-col justify-center w-2/3 mx-auto;
-  }
-  .aboutParagraph {
-    @apply font-normal text-justify w-2/3 mx-auto;
-  }
-  .iconTip {
-    @apply absolute mt-20 text-xs bg-black text-white p-1 font-bold group-hover:block hidden transition-all duration-200;
-  }
-
-  .iconAnchor {
-    @apply border-2 flex items-center justify-center text-white text-xs rounded-full transition-all mr-5 
-    border-transparent hover:scale-125;
-  }
-  .iconAnchorActive {
-    @apply border-customGreenDarker border-2 transition-all;
-  }
-
-  .techItemsContainer {
-    @apply font-bold w-full flex flex-wrap justify-center my-7;
-  }
-  .techItems {
-    @apply text-center m-1 shadow-lg bg-customGreenDark text-white rounded-full p-2 pointer-events-none;
-  }
 }
 
 @font-face {

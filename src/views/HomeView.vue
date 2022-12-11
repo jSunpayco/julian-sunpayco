@@ -1,13 +1,11 @@
 <script>
 import Landing from '@/components/Landing.vue';
-import About from '@/components/About.vue';
 import Works from '@/components/Works.vue';
-import Contact from '@/components/Contact.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
   name: "App",
-  components: { Landing, About, Works, Contact, Footer }
+  components: { Landing, Works, Footer }
 };
 </script>
 
@@ -17,22 +15,9 @@ export default {
         <Landing />
       </section>
 
-      <!-- <div class="one"></div>
-      <div class="two"></div>
-      <div class="thr"></div>
-      <div class="fou"></div> -->
-
-      <!-- <section id="about">
-          <About/>
-      </section> -->
-
       <section id="works">
           <Works/>
       </section>
-
-      <!-- <section id="contact">
-          <Contact/>
-      </section> -->
 
       <section id="footer">
           <Footer/>
