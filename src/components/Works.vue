@@ -1,6 +1,6 @@
 <script>
 import exps from "../data/experiences";
-
+import gsap from 'gsap'
 import Work from '@/components/Work.vue'
 
 export default{
@@ -11,6 +11,15 @@ export default{
       currFilter: 'All'
 		};
 	},
+  mounted() {
+    this.tl = gsap.timeline({ 
+        paused: true
+      })
+      .from("#singleWork", {opacity: 0, stagger: 0.3})
+      .to("#singleWork", {opacity: 100, duration: 0.3})
+    
+    this.tl.restart();
+  },
   components: { Work },
 	methods: {
 		toggle() {
@@ -45,16 +54,16 @@ export default{
     
     <div class="absolute -lg:centerAbsItem lg:right-10 mx-auto w-48 mt-5 rounded-lg bg-customJet z-20" :class="[isOpened ? 'visible' : 'invisible']">
       <ul>
-        <li class="p-3 hover:bg-customGreenDark rounded-t-lg cursor-pointer" @click.prevent="filterWorks('All')">
+        <li class="p-3 hover:bg-customGreenDark rounded-t-lg cursor-pointer" @click.prevent="filterWorks('All')" :class="[currFilter == 'All' ? 'bg-customGreenDark' : 'bg-transparent']">
           <p class="select-none text-white">All</p>
         </li>
-        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Academic')">
+        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Academic')" :class="[currFilter == 'Academic' ? 'bg-customGreenDark' : 'bg-transparent']">
           <p class="select-none text-white">Academic</p>
         </li>
-        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Personal')">
+        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Personal')" :class="[currFilter == 'Personal' ? 'bg-customGreenDark' : 'bg-transparent']">
           <p class="select-none text-white">Personal</p>
         </li>
-        <li class="p-3 hover:bg-customGreenDark rounded-b-lg cursor-pointer" @click.prevent="filterWorks('Professional')">
+        <li class="p-3 hover:bg-customGreenDark rounded-b-lg cursor-pointer" @click.prevent="filterWorks('Professional')" :class="[currFilter == 'Professional' ? 'bg-customGreenDark' : 'bg-transparent']">
           <p class="select-none text-white">Professional</p>
         </li>
       </ul>
@@ -63,7 +72,7 @@ export default{
     <div class="workGridContainer">
       <div class="workGrid">
         <div v-for="item in expFiltered.slice().reverse()" :key="item">
-          <Work :aWork="item"></Work>
+          <Work :aWork="item" id="singleWork"></Work>
         </div>
       </div>
     </div>
