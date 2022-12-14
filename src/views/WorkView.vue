@@ -61,11 +61,11 @@ const nextArtist = getNext()
                     <img :src="`/images/works/${myWork.preview}`" class="workDetailImage">
                 </div>
                 
-                <h3 class="detailInfoTitle text-center mt-5 hidden xl:block">About the experience</h3>
+                <h3 id="neuzeit" class="detailInfoTitle text-center mt-5 hidden xl:block">About the experience</h3>
 
                 <div class="detailInfoContainer">
                     <h3 class="detailInfoTitle block xl:hidden">About the experience</h3>
-                    <p id="desc" class="mb-0 text-justify px-5">{{myWork.description}}</p>
+                    <p id="butler" class="mb-0 text-justify px-5">{{myWork.description}}</p>
                     <a class="detailInfoLink" :href="myWork.link" target="_blank">
                         <span class="select-none text-white">Visit</span>
                     </a>
@@ -79,7 +79,10 @@ const nextArtist = getNext()
 .worksTitle{
     font-family: "Butler";
 }
-#desc{
-    font-family: "Neuzit";
+#butler{
+    font-family: "Butler";
+}
+#neuzeit{
+  font-family: "Neuzeit";
 }
 </style>

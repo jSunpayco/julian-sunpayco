@@ -13,16 +13,22 @@ export default{
             </div>
         </router-link>
         <div class="workInfo">
-            <p class="font-bold text-customJet">{{aWork.title}}</p>
-            <p class="text-customJet">{{aWork.year}}</p>
+            <p id="neuzeit" class="font-bold text-customJet">{{aWork.title}}</p>
+            <p id="butler" class="text-customJet">{{aWork.year}}</p>
         </div>
         <ul class="techItemsContainerWork">
             <li class="techItemsWork" v-for="item in aWork.techs" :key="item">
-              <p>{{item}}</p>
+              <p id="butler" class="tracking-wide">{{item}}</p>
             </li>
         </ul>
     </div>
 </template>
 
 <style scoped>
+#butler{
+  font-family: "Butler";
+}
+#neuzeit{
+  font-family: "Neuzeit";
+}
 </style>

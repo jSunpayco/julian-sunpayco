@@ -23,6 +23,9 @@
   .underlineC {
     @apply absolute bg-customRose h-[1.5px] w-full bottom-0 left-0 origin-right transition-transform duration-300 scale-x-0;
   }
+  .underlineInvert {
+    @apply underlineC origin-left scale-x-100;
+  }
   .sideNaviContainer {
     @apply transition-all duration-500 w-1/2 fixed z-50 h-screen bg-customJet;
   }
@@ -36,7 +39,7 @@
 
   /* Landing */
   .sectionContainer {
-    @apply flex flex-col mx-auto px-10 lg:flex-row justify-around h-auto basis-0;
+    @apply flex flex-col mx-auto px-10 lg:flex-row justify-around;
   }
   .iconAnchor {
     @apply border-2 flex items-center justify-center text-white text-xs rounded-full transition-all mr-5 
@@ -108,12 +111,10 @@
 
 @font-face {
   font-family: "Butler", serif;
-  font-style: bold;
-  font-weight: 900;
   src: url("@/assets/fonts/Butler_Black.otf");
 }
 
 @font-face {
-  font-family: "Neuzit", serif;
+  font-family: "Neuzeit";
   src: url("@/assets/fonts/Neuzeit Grotesk Light.otf");
 }

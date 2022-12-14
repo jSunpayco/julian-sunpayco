@@ -1,6 +1,6 @@
 <script>
 import exps from "../data/experiences";
-
+import gsap from 'gsap'
 import Work from '@/components/Work.vue'
 
 export default{
@@ -11,6 +11,15 @@ export default{
       currFilter: 'All'
 		};
 	},
+  mounted() {
+    this.tl = gsap.timeline({ 
+        paused: true
+      })
+      .from("#singleWork", {opacity: 0, stagger: 0.3})
+      .to("#singleWork", {opacity: 100, duration: 0.3})
+    
+    this.tl.restart();
+  },
   components: { Work },
 	methods: {
 		toggle() {
@@ -36,26 +45,26 @@ export default{
     <h1 id="titleName" class="worksTitle">My Experiences</h1>
 
     <div class="flex justify-center lg:justify-end mt-8">
-      <button class="flex flex-row justify-between border-2 border-customRose rounded-lg p-2 w-48 bg-white" @click.prevent="toggle()">
-        <p class="select-none">Filter: {{currFilter}}</p>
-        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></div>
+      <button class="flex flex-row justify-between border-2 border-customRose rounded-lg p-2 w-48 bg-customJet" @click.prevent="toggle()">
+        <p class="select-none text-white">Filter: {{currFilter}}</p>
+        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg></div>
       </button>
     </div>
 
     
-    <div class="absolute -lg:centerAbsItem lg:right-10 mx-auto w-48 mt-5 rounded-lg bg-white z-20" :class="[isOpened ? 'visible' : 'invisible']">
+    <div class="absolute -lg:centerAbsItem lg:right-10 mx-auto w-48 mt-5 rounded-lg bg-customJet z-20" :class="[isOpened ? 'visible' : 'invisible']">
       <ul>
-        <li class="p-3 hover:bg-customLavender rounded-t-lg cursor-pointer text-black" @click.prevent="filterWorks('All')">
-          <p class="select-none">All</p>
+        <li class="p-3 hover:bg-customGreenDark rounded-t-lg cursor-pointer" @click.prevent="filterWorks('All')" :class="[currFilter == 'All' ? 'bg-customGreenDark' : 'bg-transparent']">
+          <p class="select-none text-white">All</p>
         </li>
-        <li class="p-3 hover:bg-customLavender rounded-t-lg cursor-pointer text-black" @click.prevent="filterWorks('Academic')">
-          <p class="select-none">Academic</p>
+        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Academic')" :class="[currFilter == 'Academic' ? 'bg-customGreenDark' : 'bg-transparent']">
+          <p class="select-none text-white">Academic</p>
         </li>
-        <li class="p-3 hover:bg-customLavender cursor-pointer text-black" @click.prevent="filterWorks('Personal')">
-          <p class="select-none">Personal</p>
+        <li class="p-3 hover:bg-customGreenDark cursor-pointer" @click.prevent="filterWorks('Personal')" :class="[currFilter == 'Personal' ? 'bg-customGreenDark' : 'bg-transparent']">
+          <p class="select-none text-white">Personal</p>
         </li>
-        <li class="p-3 hover:bg-customLavender rounded-b-lg cursor-pointer text-black" @click.prevent="filterWorks('Professional')">
-          <p class="select-none">Professional</p>
+        <li class="p-3 hover:bg-customGreenDark rounded-b-lg cursor-pointer" @click.prevent="filterWorks('Professional')" :class="[currFilter == 'Professional' ? 'bg-customGreenDark' : 'bg-transparent']">
+          <p class="select-none text-white">Professional</p>
         </li>
       </ul>
     </div>
@@ -63,7 +72,7 @@ export default{
     <div class="workGridContainer">
       <div class="workGrid">
         <div v-for="item in expFiltered.slice().reverse()" :key="item">
-          <Work :aWork="item"></Work>
+          <Work :aWork="item" id="singleWork"></Work>
         </div>
       </div>
     </div>

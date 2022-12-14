@@ -1,63 +1,19 @@
 <script>
-import gsap from 'gsap'
-import spotify from "../data/spotify";
+import Music from '@/components/Music.vue';
 
 export default{
-  data() {
-    return{
-      index: 0,
-      artists: spotify[0],
-      show: false
-    }
-  },
-  mounted() {
-    this.tl = gsap.timeline({ 
-        paused: true
-      })
-      .from(this.$refs.spotifyName, {opacity: 0, delay: .65})
-      .to(this.$refs.spotifyName, {opacity: 100, duration: 0.5})
-    
-    this.tl.restart();
-  },
-  methods: {
-    nextArtist: function(){
-      this.tl.restart();
-
-      this.show = true
-      if(this.index == 4)
-        this.index = 0
-      else
-        this.index += 1
-      this.artists = spotify[this.index]
-      let temp = new Image(200, 200)
-      temp.src = `/images/spotify/${this.artists.img}`
-
-      setTimeout(() => this.show = false, 650);
-    },
-    prevArtist: function(){
-      this.tl.restart();
-
-      this.show = true
-      if(this.index == 0)
-        this.index = 4
-      else
-        this.index -= 1
-      this.artists = spotify[this.index]
-
-      setTimeout(() => this.show = false, 650);
-    }
-  }
+  components:{Music}
 }
 
 </script>
 
 <template>
   <div class="sectionContainer">
-    <div class="mt-24 md:px-10 lg:px-0 w-full lg:w-1/2">
+    <div class="mt-20 lg:my-auto md:px-10 lg:px-0 w-full lg:w-1/2">
       <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-8xl">Welcome!</h1>
-      <p id="paragraph" class="font-normal text-lg text-customRaisin text-justify tracking-wide">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
+      <p id="titleName" class="font-light text-lg text-customRaisin text-justify tracking-wide mt-5 leading-loose">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
       
-      <div class="flex justify-center lg:justify-start mt-2">
+      <div class="flex justify-center lg:justify-start mt-5">
 
         <a href="https://www.linkedin.com/in/julian-rafael-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
@@ -80,31 +36,13 @@ export default{
         </a>
 
       </div>
-    
-      <div class="aspect-square max-h-72 mx-auto lg:mx-0 mt-2">
-        <h1 id="titleName" class="m-auto font-bold text-center w-full text-3xl text-customRaisin">My Spotify's Top 5</h1>
-
-        <div class="flex flex-row justify-center my-2">
-          <button class="w-8 h-8 bg-customJet mr-3 rounded-full hover:scale-125 transition-all" @click.prevent="prevArtist()" :disabled="show">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" /></svg>
-          </button>
-          <button class="w-8 h-8 bg-customJet rounded-full hover:scale-125 transition-all" @click.prevent="nextArtist()" :disabled="show">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></svg>
-          </button>
-        </div>
-
-        <div class="bg-customBeigeDark aspect-square max-h-80 mx-auto lg:mx-0 text-center">
-          <img v-if="(show === false)" :src="`/images/spotify/${artists.img}`" class="px-4 pt-4">
-          <img v-else src="/images/static.gif" class="px-4 pt-4">
-          <a id="paragraph" class="text-2xl font-bold pt-5 mb-5 inline-block tracking-wide border-b-2 border-customRose" :href="artists.link" target="_blank" ref="spotifyName">{{artists.name}}</a>
-        </div>
-      </div>
 
     </div>
 
     <div class="h-[680px] mt-24 w-[513px] mx-auto lg:mx-0 bg-Grad bg-cover bg-no-repeat"></div>
 
   </div>
+  <Music />
 </template>
 
 <style scoped>
@@ -112,6 +50,6 @@ export default{
   font-family: "Butler";
 }
 #paragraph{
-  font-family: "Neuzit";
+  font-family: "Neuzeit";
 }
 </style>
