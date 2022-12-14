@@ -85,6 +85,26 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AA8B56;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #886F45;
+}
 body{
   background-color: #E6E4D7;
   /* background-color: #84DCCF; */
