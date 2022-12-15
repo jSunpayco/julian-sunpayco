@@ -73,9 +73,9 @@ export default{
             </button>
         </div>
 
-        <div class="flex flex-col items-center lg:items-end">
-            <h2 id="butler" class="text-3xl font-bold text-customRaisin">Need Something New to Listen to?</h2>
-            <h3 id="butler" class="text-lg w-5/6 text-justify lg:text-right tracking-wide mt-5">Some things in life are more enjoyable with a song to fill the silence. Here are the top 5 artists/bands I listen to on Spotify. You may click the link below to listen to the full song on Spotify, or the image for just the preview.</h3>
+        <div class="flex flex-col items-center lg:items-end w-full">
+            <h2 id="butler" class="text-3xl font-bold text-customRaisin text-center">Need Something New to Listen to?</h2>
+            <h3 id="butler" class="text-lg lg:w-5/6 text-justify lg:text-right tracking-wide mt-5">Some things in life are more enjoyable with a song to fill the silence. Here are the top 5 artists/bands I listen to on Spotify. You may click the link below to listen to the full song on Spotify, or the image for just the preview.</h3>
             <div class="block lg:hidden h-52 aspect-square rounded-2xl mt-10">
                 <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full">
                 <button class="rounded-2xl h-full w-full relative" v-else @click="toggleSong()">
