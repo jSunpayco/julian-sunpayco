@@ -22,7 +22,7 @@ function getPrev(){
 const prevArtist = getPrev()
 
 function getNext(){
-    if(myWork.id == 5){
+    if(myWork.id == exps.length){
         return exps[0].idName
     }
     else{
