@@ -58,6 +58,18 @@ const experiences = [
         techs: ["Vue", "JavaScript", "Tailwind", "GSAP"],
         preview: 'portfolio.png',
         type: 'Personal Project'
+    },
+    {
+        id: 6,
+        idName: "slice",
+        title: "Slice",
+        linkName: "demo",
+        link: "https://slice-jwg6sl3cx-jsunpayco.vercel.app/",
+        year: "Jan 2023",
+        description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. However, you'd need not to worry if you have nothing to share as you, the public, will still have access to the different recipes shared by the application's users. Small note; I was able to use firebase as storage for the initial dummy data, but actually uploading a recipe is still not yet a working feature. As the client-side is now complete, I can just focus on the server-side whenever I have the time to work on this project.",
+        techs: ["React", "TypeScript", "Firebase"],
+        preview: 'slice.png',
+        type: 'Personal Project'
     }
 ]
 
