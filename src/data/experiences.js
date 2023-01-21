@@ -61,7 +61,7 @@ const experiences = [
     },
     {
         id: 6,
-        idName: "slice",
+        idName: "slice-recipes",
         title: "Slice",
         linkName: "demo",
         link: "https://slice-jwg6sl3cx-jsunpayco.vercel.app/",
