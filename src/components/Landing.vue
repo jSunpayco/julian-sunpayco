@@ -15,7 +15,7 @@ export default{
       
       <div class="flex justify-center lg:justify-start mt-5">
 
-        <a href="https://www.linkedin.com/in/julian-rafael-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
+        <a href="https://www.linkedin.com/in/julian-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
           <img src="/images/lin.png" class="h-14"/>
         </a>
