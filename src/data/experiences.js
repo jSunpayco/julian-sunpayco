@@ -54,7 +54,7 @@ const experiences = [
         linkName: "demo",
         link: "https://julian-sunpayco.vercel.app/",
         year: "Dec 2022",
-        description: "This is where you're currently at! This was made to expand my knowledge on JS frameworks while showcasing my past experiences in the field. This is the first web application I made with Vue JS, and yet another experience added when it comes down to component-based frameworks. Additionally, after learning much CSS, I've decided to give Tailwind a try to see what benefits do styling frameworks provide to developers. As I've concluded, although it does help make writing styling code quicker with its abstraction, it also seems to trade-off with more verbose markups in many cases, and although the @apply gave me the first impression of being able to avoid class duplication, I just noticed that my stylesheet became longer and longer, increasing the value of the existence of reusable HTML components. This could either be a personal roadblock or the drawback of a framework, but there definitely could be improvements on either side.",
+        description: "This is where you're currently at! This was made to expand my knowledge on JS frameworks while showcasing my past experiences in the field. This is the first web application I made with Vue JS, and yet another experience added when it comes down to component-based frameworks. Additionally, after learning much CSS, I've decided to give Tailwind a try, and found it useful only when writing inline styling.",
         techs: ["Vue", "JavaScript", "Tailwind", "GSAP"],
         preview: 'portfolio.png',
         type: 'Personal Project'
@@ -66,7 +66,7 @@ const experiences = [
         linkName: "demo",
         link: "https://slice-recipes.vercel.app/",
         year: "Jan 2023",
-        description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. However, you'd need not to worry if you have nothing to share as you, the public, will still have access to the different recipes shared by the application's users. Note; Currently, the comments feature is under works.",
+        description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful to me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. However, you'd need not to worry if you have nothing to share as you, the public, will still have access to the different recipes shared by the application's users.",
         techs: ["React", "TypeScript", "Firebase"],
         preview: 'slice.png',
         type: 'Personal Project'
