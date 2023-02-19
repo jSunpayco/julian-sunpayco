@@ -63,13 +63,13 @@ export default{
         </audio>
 
         <div class="hidden lg:block h-52 aspect-square rounded-2xl relative">
-            <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full">
+            <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full" alt="loading">
             <button class="rounded-2xl h-full w-full relative" v-else @click="toggleSong()">
                 <p class="linkOverImage bg-opacity-70 rounded-2xl">
                     <svg v-if="myData[currIndex].isPlaying" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" /></svg>
                     <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" /></svg>
                 </p>
-                <img :src="`/images/spotify/${myData[currIndex].img}`" class="rounded-2xl h-full w-full">
+                <img :src="`/images/spotify/${myData[currIndex].img}`" class="rounded-2xl h-full w-full" alt="Pause/Play">
             </button>
         </div>
 
@@ -77,13 +77,13 @@ export default{
             <h2 id="butler" class="text-3xl font-bold text-customRaisin text-center">Need Something New to Listen to?</h2>
             <h3 id="butler" class="text-lg lg:w-5/6 text-justify lg:text-right tracking-wide mt-5">Some things in life are more enjoyable with a song to fill the silence. Here are the top 5 artists/bands I listen to on Spotify. You may click the link below to listen to the full song on Spotify, or the image for just the preview.</h3>
             <div class="block lg:hidden h-52 aspect-square rounded-2xl mt-10">
-                <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full">
+                <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full" alt="loading">
                 <button class="rounded-2xl h-full w-full relative" v-else @click="toggleSong()">
                     <p class="linkOverImage bg-opacity-70 rounded-2xl">
                         <svg v-if="myData[currIndex].isPlaying" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" /></svg>
                         <svg v-else xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" /></svg>
                     </p>
-                    <img :src="`/images/spotify/${myData[currIndex].img}`" class="rounded-2xl h-full w-full">
+                    <img :src="`/images/spotify/${myData[currIndex].img}`" class="rounded-2xl h-full w-full" alt="Pause/Play">
                 </button>
             </div>
             <div class="flex flex-row justify-between my-auto mt-10 lg:mt-5 w-full lg:w-5/6">

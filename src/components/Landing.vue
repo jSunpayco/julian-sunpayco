@@ -17,22 +17,22 @@ export default{
 
         <a href="https://www.linkedin.com/in/julian-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
-          <img src="/images/lin.png" class="h-14"/>
+          <img src="/images/lin.png" class="h-14" alt="LinkedIn"/>
         </a>
 
         <a href="https://github.com/jSunpayco" class="iconAnchor" title="GitHub" target="_blank">
           <!-- GitHub -->
-          <img src="/images/git.png" class="h-14"/>
+          <img src="/images/git.png" class="h-14" alt="GitHub"/>
         </a>
 
         <a href="mailto:julian.sunpayco@gmail.com" class="iconAnchor" title="Email">
           <!-- Mail -->
-          <img src="/images/download.png" class="h-14"/>
+          <img src="/images/download.png" class="h-14" alt="E-Mail"/>
         </a>
 
         <a href="https://docs.google.com/document/d/1EZ16z_8f27CigaGc-rS0BvDa1Y-1iiTk/edit?usp=sharing&ouid=108257889502087676299&rtpof=true&sd=true" class="iconAnchor" title="Resume" target="_blank">
           <!-- Resume -->
-          <img src="/images/resume.png" class="h-14"/>
+          <img src="/images/resume.png" class="h-14" alt="Resume"/>
         </a>
 
       </div>
