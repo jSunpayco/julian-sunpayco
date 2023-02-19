@@ -43,7 +43,7 @@ export default {
                 <li><a id="links_contact" class="naviLink" href="/#footer">contact</a></li>
             </ul>
             <div class="mx-5">
-              <button class="lg:hidden block text-black hover:text-customRose transition-colors" @click.prevent="toggle()">
+              <button class="lg:hidden block text-black hover:text-customRose transition-colors" @click.prevent="toggle()" aria-label="SideMenu">
                 <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                 </svg>
@@ -57,7 +57,7 @@ export default {
     <!-- <div class="fixed inset-0 bg-gray-800 opacity-25" :class="[open ? 'visible' : 'invisible']"></div> -->
     <nav class="sideNavi">
       <div class="flex items-center mb-12">
-          <button class="navbar-close" @click.prevent="toggle()">
+          <button class="navbar-close" @click.prevent="toggle()" aria-label="CloseSideMenu">
               <svg class="h-6 w-6 cursor-pointer text-white hover:text-customRose" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
