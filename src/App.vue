@@ -38,9 +38,9 @@ export default {
             </a>
             <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet">
                 <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
-                <li><a id="links" class="naviLink" href="/#landing">about</a></li>
-                <li><a id="links" class="naviLink" href="/#works">experience</a></li>
-                <li><a id="links" class="naviLink" href="/#footer">contact</a></li>
+                <li><a id="links_about" class="naviLink" href="/#landing">about</a></li>
+                <li><a id="links_work" class="naviLink" href="/#works">experience</a></li>
+                <li><a id="links_contact" class="naviLink" href="/#footer">contact</a></li>
             </ul>
             <div class="mx-5">
               <button class="lg:hidden block text-black hover:text-customRose transition-colors" @click.prevent="toggle()">
@@ -109,7 +109,7 @@ body{
   background-color: #E6E4D7;
   /* background-color: #84DCCF; */
 }
-#links{
+.naviLink{
   font-family: "Neuzit";
 }
 #sideLink{
