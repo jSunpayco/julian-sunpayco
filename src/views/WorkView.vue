@@ -65,7 +65,12 @@ const nextArtist = getNext()
 
                 <div class="detailInfoContainer">
                     <h3 class="detailInfoTitle block xl:hidden">About the experience</h3>
-                    <p id="butler" class="mb-0 text-justify px-5">{{myWork.description}}</p>
+                    <p id="butler" class="mb-0 text-justify px-5">
+                        {{myWork.description}}
+                        <a v-if="myWork.repo" :href="myWork.repo" target="_blank" class="underline">
+                            Click here for the repo
+                        </a>
+                    </p>
                     <a class="detailInfoLink" :href="myWork.link" target="_blank">
                         <span class="select-none text-white">Visit</span>
                     </a>
