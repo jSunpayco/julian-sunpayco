@@ -10,10 +10,10 @@ export default{
 <template>
   <div class="sectionContainer">
     <div class="mt-20 lg:my-auto md:px-10 lg:px-0 w-full lg:w-1/2">
-      <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-[4rem] sm:text-8xl">Welcome!</h1>
+      <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-[40px] xs:text-8xl">Welcome!</h1>
       <p id="titleName" class="font-light text-lg text-customRaisin text-justify tracking-wide mt-5 leading-loose">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
       
-      <div class="flex justify-center lg:justify-start mt-5">
+      <div class="flex justify-center lg:justify-start mt-5 flex-wrap">
 
         <a href="https://www.linkedin.com/in/julian-sunpayco-b4365222a/" class="iconAnchor" title="LinkedIn" target="_blank">
           <!-- Linkedin -->
@@ -39,7 +39,7 @@ export default{
 
     </div>
 
-    <div class="h-96 sm:h-[680px] mt-24 w-4/6 sm:w-[480px] mx-auto lg:mx-0 bg-Grad bg-cover bg-no-repeat"></div>
+    <div class="h-96 sm:h-[680px] mt-24 w-full xs:w-4/6 sm:w-[480px] mx-auto lg:mx-0 bg-Grad bg-cover bg-no-repeat bg-right"></div>
 
   </div>
   <Music />
