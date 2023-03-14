@@ -52,7 +52,7 @@
   }
 
   .worksTitle {
-    @apply text-6xl font-bold text-customJet align-middle text-center w-full md:mt-0;
+    @apply text-3xl xs:text-6xl font-bold text-customJet align-middle text-center w-full md:mt-0;
   }
 
   .workGridContainer {

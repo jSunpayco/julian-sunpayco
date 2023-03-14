@@ -18,7 +18,7 @@ const experiences = [
         linkName: "demo",
         link: "https://www.figma.com/proto/ENVUAYEbFn2q43IMysKRf9/Pasakay-Application-Prototype?node-id=230%3A2888&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=230%3A2888&show-proto-sidebar=1",
         year: "Mar - Jun 2022",
-        description: "A prototype for a carpooling application directed towards a university's students, professors, staff, and alumni. This is the product of a group project I participated in during an entrepreneurship subject directed towards software developers. The development of the project began from determining the existence of a certain market and ended with providing a minimum viable product for their problems. After creating the original prototype using Figma, the design and overall structure was modified after every iteration that included UX testing with target customers.",
+        description: "Pasakay: To get on a vehicle; A prototype for a carpooling application directed towards a university's students, professors, staff, and alumni. This is the product of a group project I participated in during an entrepreneurship subject directed towards software developers. The development of the project began from determining the existence of a certain market and ended with providing a minimum viable product for their problems. After creating the original prototype using Figma, the design and overall structure was modified after every iteration that included UX testing with target customers.",
         techs: ["Figma", "UX Design"],
         preview: 'pasakay.webp',
         type: 'Academic Project'
@@ -43,8 +43,8 @@ const experiences = [
         link: "https://dota-drafter.vercel.app/",
         repo:"https://github.com/jSunpayco/dota_drafter",
         year: "Nov 2022",
-        description: "My first take on a full-stack project where I had decided to branch out of just learning one JavaScript framework and decided to go for React. Hearing from friends and reading other testimonies online on the so-called more streamlined version of a JS framework, I was obviously curious how different it could be from Angular. Turns out, the reusablility part of React is what drew developers towards it. By creating a template that can be used as many times as you want, you wouldn't need to do so much to perform changes. Additionally, I also took the opportunity to learn some backend development by uploading my data on Mongo Atlas, and then calling them via my own api.",
-        techs: ["MERN", "CSS", "MantineUI", "TypeScript"],
+        description: "My first take on a full-stack project where I had decided to branch out of just learning one JavaScript framework and decided to go for React. Hearing from friends and reading other testimonies online on the so-called more streamlined version of a JS framework, I was obviously curious how different it could be from Angular. Turns out, the reusablility part of React is what drew developers towards it. By creating a template that can be used as many times as you want, you wouldn't need to do so much to perform changes.",
+        techs: ["React", "CSS", "MantineUI", "TypeScript"],
         preview: 'drafter.webp',
         type: 'Personal Project'
     },
@@ -69,7 +69,7 @@ const experiences = [
         link: "https://slice-recipes.vercel.app/",
         year: "Jan 2023",
         description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful to me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. However, you'd need not to worry if you have nothing to share as you, the public, will still have access to the different recipes shared by the application's users. Note: Repo is in the works and will be made public after a while.",
-        techs: ["React", "TypeScript", "Firebase"],
+        techs: ["React", "TypeScript", "Firebase", "Sass"],
         preview: 'slice.webp',
         type: 'Personal Project'
     }
