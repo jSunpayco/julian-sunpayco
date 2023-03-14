@@ -76,7 +76,7 @@ export default{
         <div class="flex flex-col items-center lg:items-end w-full">
             <h2 id="butler" class="text-3xl font-bold text-customRaisin text-center">Need Something New to Listen to?</h2>
             <h3 id="butler" class="text-lg lg:w-5/6 text-justify lg:text-right tracking-wide mt-5">Some things in life are more enjoyable with a song to fill the silence. Here are the top 5 artists/bands I listen to on Spotify. You may click the link below to listen to the full song on Spotify, or the image for just the preview.</h3>
-            <div class="block lg:hidden h-52 aspect-square rounded-2xl mt-10">
+            <div class="block lg:hidden h-52 aspect-square rounded-2xl mt-10" title="Pause/Play">
                 <img v-if="loading" src="/images/static.gif" class="rounded-2xl h-full w-full" alt="loading">
                 <button class="rounded-2xl h-full w-full relative" v-else @click="toggleSong()" aria-label="ToggleSong">
                     <p class="linkOverImage bg-opacity-70 rounded-2xl">
@@ -87,11 +87,11 @@ export default{
                 </button>
             </div>
             <div class="flex flex-row justify-between my-auto mt-10 lg:mt-5 w-full lg:w-5/6">
-                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="prevArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Previous">
+                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="prevArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Previous" title="Previous">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" /></svg>
                 </button>
-                <a id="neuzeit" class="text-2xl tracking-wider px-5 after:underlineInvert after:hover:scale-x-0 after:hover:origin-right relative text-center" :class="[loading ? 'opacity-0' : 'opacity-100']" :href="myData[currIndex].link" target="_blank">{{myData[currIndex].name}}</a>
-                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="nextArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Next">
+                <a id="neuzeit" class="text-lg xs:text-2xl tracking-wider px-5 after:underlineInvert after:hover:scale-x-0 after:hover:origin-right relative text-center" :class="[loading ? 'opacity-0' : 'opacity-100']" :href="myData[currIndex].link" target="_blank" title="Spotify">{{myData[currIndex].name}}</a>
+                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="nextArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Next" title="Next">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></svg>
                 </button>
             </div>
