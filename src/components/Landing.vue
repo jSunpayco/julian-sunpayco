@@ -11,7 +11,7 @@ export default{
   <div class="sectionContainer">
     <div class="mt-20 lg:my-auto md:px-10 lg:px-0 w-full lg:w-1/2">
       <h1 id="titleName" class="font-bold text-center lg:text-start text-customRaisin w-full text-[40px] xs:text-8xl">Welcome!</h1>
-      <p id="titleName" class="font-light text-lg text-customRaisin text-justify tracking-wide mt-5 leading-loose">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience as a Junior / Entry-level / Intern in <span class="font-bold">Web Development</span>. Feel free to contact me through one of these platforms.</p>
+      <p id="titleName" class="font-light text-lg text-customRaisin text-justify tracking-wide mt-5 leading-loose">My name is <span class="font-bold">Julian Sunpayco</span>, and I hold a bachelor's degree in Computer Science. I look forward to gain more professional experience in <span class="font-bold">Software Development</span>. Feel free to contact me through one of these platforms.</p>
       
       <div class="flex justify-center lg:justify-start mt-5 flex-wrap">
 
