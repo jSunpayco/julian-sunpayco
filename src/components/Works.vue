@@ -3,8 +3,6 @@ import exps from "../data/experiences";
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Work from '@/components/Work.vue'
-import { ref } from 'vue'
-import { onClickOutside } from '@vueuse/core'
 
 gsap.registerPlugin(ScrollTrigger);
 
