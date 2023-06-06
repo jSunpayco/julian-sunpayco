@@ -1,35 +1,55 @@
 <script>
 import exps from "../data/experiences";
 import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import Work from '@/components/Work.vue'
 import { ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default{
   data() {
 		return {
       target: null,
       dropwdown: null,
+      grid: null,
       expFiltered: exps,
       isOpened: false,
       currFilter: 'All'
 		};
 	},
   mounted() {
-    this.tl = gsap.timeline({ 
-        paused: true
-      })
-      .from("#singleWork", {opacity: 0, stagger: 0.3})
-      .to("#singleWork", {opacity: 100, duration: 0.3})
-    
-    this.tl.restart();
+    this.animateListItems();
 
     this.target = this.$refs.target;
     this.dropwdown = this.$refs.dropwdown;
     document.addEventListener('click', this.handleOutsideClick);
+    this.grid = this.$refs.grid;
   },
   components: { Work },
 	methods: {
+    animateListItems() {
+      setTimeout(() => {
+        const listItems = gsap.utils.toArray('#singleWork');
+
+        listItems.forEach((item, index) => {
+          gsap.fromTo(
+            item,
+            { opacity: 0 },
+            {
+              opacity: 1,
+              duration: 0.5,
+              delay: (index * 0.1),
+              scrollTrigger: {
+                trigger: this.$refs.grid,
+                toggleActions: 'play none none reverse',
+              }
+            }
+          );
+        });
+      }, 100)
+    },
 		toggle() {
 			this.isOpened = !this.isOpened;
       if (this.isOpened) {
@@ -94,7 +114,7 @@ export default{
       </ul>
     </div>
 
-    <div class="workGridContainer">
+    <div class="workGridContainer" ref="grid">
       <div class="workGrid">
         <div v-for="item in expFiltered.slice().reverse()" :key="item">
           <Work :aWork="item" id="singleWork"></Work>
