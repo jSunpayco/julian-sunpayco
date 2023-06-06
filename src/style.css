@@ -79,7 +79,7 @@
     @apply font-normal w-full flex flex-wrap justify-start;
   }
   .techItemsWork {
-    @apply text-center m-1 bg-customGreenDark text-white rounded-md p-2 text-xs pointer-events-none;
+    @apply text-center m-1 bg-customGreenDark text-white rounded-md py-1 px-2 text-sm pointer-events-none;
   }
 
   /* Work details view */

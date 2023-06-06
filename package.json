@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^10.1.2",
     "gsap": "^3.11.3",
+    "lodash.debounce": "^4.0.8",
     "vue": "^3.2.41"
   },
   "devDependencies": {
