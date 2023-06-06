@@ -87,11 +87,11 @@ export default{
                 </button>
             </div>
             <div class="flex flex-row justify-between my-auto mt-10 lg:mt-5 w-full lg:w-5/6">
-                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="prevArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Previous" title="Previous">
+                <button class="w-32 h-8 bg-customJet rounded-xl transition-all" @click.prevent="prevArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-[1.15]']" aria-label="Previous" title="Previous">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" /></svg>
                 </button>
                 <a id="neuzeit" class="text-lg xs:text-2xl tracking-wider px-5 after:underlineInvert after:hover:scale-x-0 after:hover:origin-right relative text-center" :class="[loading ? 'opacity-0' : 'opacity-100']" :href="myData[currIndex].link" target="_blank" title="Spotify">{{myData[currIndex].name}}</a>
-                <button class="w-32 h-8 bg-customJet rounded-full transition-all" @click.prevent="nextArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-125']" aria-label="Next" title="Next">
+                <button class="w-32 h-8 bg-customJet rounded-xl transition-all" @click.prevent="nextArtist()" :disabled="loading" :class="[loading ? 'bg-slate-500' : 'hover:scale-[1.15]']" aria-label="Next" title="Next">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mx-auto text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" /></svg>
                 </button>
             </div>
