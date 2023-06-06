@@ -68,9 +68,33 @@ const experiences = [
         linkName: "demo",
         link: "https://slice-recipes.vercel.app/",
         year: "Jan 2023",
-        description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful to me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. However, you'd need not to worry if you have nothing to share as you, the public, will still have access to the different recipes shared by the application's users. Note: Repo is in the works and will be made public after a while.",
+        description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful to me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. This was made possible by implementing Firebase Firestore for storage and filtering, as well as Firebase Authentication in order for users to create their own accounts and share their recipes on the app.",
         techs: ["React", "TypeScript", "Firebase", "Sass"],
         preview: 'slice.webp',
+        type: 'Personal Project'
+    },
+    {
+        id: 7,
+        idName: "slice-postgre",
+        title: "Slice PostgreSQL",
+        linkName: "repo",
+        link: "https://github.com/jSunpayco/slice-backend",
+        year: "April 2023",
+        description: "Due to my curiosity on working with backend technologies, I decided to take a look at what my previous project, Slice's backend would've looked like if I had used PostgreSQL instead of Firebase. Because of that, it gave me the opportunity to work on developing my own APIs using express, writing SQL queries, as well as testing the APIs with Jest to ensure that they behave as expected.",
+        techs: ["Node", "Express", "PostgreSQL", "Jest"],
+        preview: 'slice-back.webp',
+        type: 'Personal Project'
+    },
+    {
+        id: 8,
+        idName: "seekr",
+        title: "SeekR",
+        linkName: "repo",
+        link: "https://github.com/jSunpayco/seekr",
+        year: "May 2023 - Present",
+        description: "Being motivated to create a more personalized platform to help me track my job applications, I decieded to develop a job tracker app that allows me to give me a summary of my journey in looking for a job in Software Development. Whilst the design for the frontend component has been made using Figma, the rest of the features (deployed on AWS Amplify) are still under development. This is the same with the backend component wherein I plan to develop it with .Net C#, and also deploy it on AWS",
+        techs: ["AWS", "React", "Typescript", "Figma", "SASS", ".Net"],
+        preview: 'seekr.webp',
         type: 'Personal Project'
     }
 ]
