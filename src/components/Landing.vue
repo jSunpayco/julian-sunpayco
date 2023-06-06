@@ -27,7 +27,7 @@ export default{
 
         <a href="mailto:julian.sunpayco@gmail.com" class="iconAnchor" title="Email">
           <!-- Mail -->
-          <img src="/images/download.png" class="h-14" alt="E-Mail"/>
+          <img src="/images/download.png" class="h-14" alt="Email"/>
         </a>
 
         <a href="https://docs.google.com/document/d/1EZ16z_8f27CigaGc-rS0BvDa1Y-1iiTk/edit?usp=sharing&ouid=108257889502087676299&rtpof=true&sd=true" class="iconAnchor" title="Resume" target="_blank">

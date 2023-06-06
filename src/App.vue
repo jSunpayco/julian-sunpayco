@@ -33,11 +33,10 @@ export default {
   <div class="w-screen fixed z-10 bg-customBeigeLight">
     <div class="container px-4 mx-auto max-w-7xl">
         <nav class="flex justify-between items-center py-2">
-            <a class="uppercase font-extrabold text-base py-2 rounded-full text-customJet" href="/#landing">
+            <a class="uppercase font-extrabold text-base py-2 rounded-full text-customJet" href="/" title="Home">
                 sunpayco
             </a>
             <ul class="hidden lg:flex ml-auto my-4 items-center space-x-12 text-customJet">
-                <!-- <li class="w-14"><a class="naviLink" href="#landing">HOME</a></li> -->
                 <li><a id="links_about" class="naviLink" href="/#landing">about</a></li>
                 <li><a id="links_work" class="naviLink" href="/#works">experience</a></li>
                 <li><a id="links_contact" class="naviLink" href="/#footer">contact</a></li>
