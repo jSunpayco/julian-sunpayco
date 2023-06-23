@@ -68,14 +68,14 @@ const experiences = [
         link: "https://slice-recipes.vercel.app/",
         year: "Jan 2023",
         description: "My next take on creating a project was to further improve my understanding on React, JavaScript, and web development in general. This was along with the incentive to create something that has the potential to be useful to me sometime in the future. Slice, is a recipe sharing application that aims to be of use those who want to safekeep and share recipes that they have created, or was taught to them for future reference. This wa initially made possible by implementing Firebase Firestore for storage and filtering, as well as Firebase Authentication in order for users to create their own accounts and share their recipes on the app. However, due to the app requiring complex querying, and improved customizability and control, the backend is currently being migrated to the Node backend. Details about this component can be found in the next project.",
-        techs: ["React", "TypeScript", "Sass"],
+        techs: ["Firebase,", "React", "TypeScript", "Sass"],
         preview: 'slice.webp',
         type: 'Personal Project'
     },
     {
         id: 7,
-        idName: "slice-postgre",
-        title: "Slice PostgreSQL",
+        idName: "slice-backend",
+        title: "Slice Backend",
         linkName: "repo",
         link: "https://github.com/jSunpayco/slice-backend",
         year: "April 2023",
